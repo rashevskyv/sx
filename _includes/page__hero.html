@@ -1,0 +1,47 @@
+{% if page.header.image contains "://" %}
+  {% capture img_path %}{{ page.header.image }}{% endcapture %}
+{% else %}
+  {% capture img_path %}{{ page.header.image | absolute_url }}{% endcapture %}
+{% endif %}
+
+{% if page.header.cta_url contains "://" %}
+  {% capture cta_path %}{{ page.header.cta_url }}{% endcapture %}
+{% else %}
+  {% capture cta_path %}{{ page.header.cta_url | absolute_url }}{% endcapture %}
+{% endif %}
+
+{% if page.header.overlay_image contains "://" %}
+  {% capture overlay_img_path %}{{ page.header.overlay_image }}{% endcapture %}
+{% elsif page.header.overlay_image %}
+  {% capture overlay_img_path %}{{ page.header.overlay_image | absolute_url }}{% endcapture %}
+{% endif %}
+
+{% if page.header.overlay_filter contains "rgba" %}
+  {% capture overlay_filter %}{{ page.header.overlay_filter }}{% endcapture %}
+{% elsif page.header.overlay_filter %}
+  {% capture overlay_filter %}rgba(0, 0, 0, {{ page.header.overlay_filter }}){% endcapture %}
+{% endif %}
+
+{% if page.header.image_description %}
+  {% assign image_description = page.header.image_description %}
+{% else %}
+  {% assign image_description = page.title %}
+{% endif %}
+
+{% assign image_description = image_description | markdownify | strip_html | strip_newlines | escape_once %}
+
+<div class="page__hero--overlay"
+  style="background-color: {{ page.header.overlay_color | default: 'transparent' }}; background-image: url('{{ overlay_img_path }}');">
+  <div class='av-section-color-overlay'></div>
+  <div class="hero__text centered">
+    <div class="wrapper__hero">
+      <h1 class="page__title" itemprop="headline">
+          {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
+      </h1>
+      <p class="page__lead">{{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+    </div>
+    <div class="wrapper__hero">
+      <a href="#как-заказать-прошивку-или-купить-прошитую-приставку" class="button">Заказать</a>
+    </div>
+  </div>
+</div>

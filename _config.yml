@@ -2,13 +2,13 @@ minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint"
 
 # Site Settings
 locale                   : "ru-RU"
-title                    : "Взлом Switch"
+title                    : "SX Core / SX Lite"
 title_separator          : "-"
 name                     : "nincfw team"
-description              : "Полное руководство по прошивке Nintendo Switch"
-url                      : "https://switch.customfw.xyz" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Взлом Nintendo Switch второй ревизии и Nintendo Switch Lite"
+url                      : "https://sx.customfw.xyz" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "rashevskyv/switch" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "rashevskyv/sx" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200

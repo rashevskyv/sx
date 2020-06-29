@@ -374,7 +374,7 @@ li > p:first-child {
   flex-direction: column;
   margin: 0 15vw;
   height: 80vh;
-  @include breakpoint($medium-wide) {
+  @include breakpoint($large) {
     height: 50vh;
   }
 }
@@ -415,7 +415,7 @@ li > p:first-child {
   padding: 0 !important;
   margin: 0 !important;
 
-  @include breakpoint($medium-wide) {
+  @include breakpoint($large) {
    min-height: 50vh;
  }
 	 
@@ -423,14 +423,14 @@ li > p:first-child {
       max-width: 100% !important;
       font-size: 1em;
 
-      @include breakpoint($medium-wide) {
+      @include breakpoint($x-large) {
         font-size: 1.5em;
       }
     }
     .page__title {
       font-size: 2em;
 
-      @include breakpoint($medium-wide) {
+      @include breakpoint($medium) {
         font-size: 2.5em;
       }
 

@@ -69,16 +69,4 @@ $(document).ready(function(){
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
 
-  $(function () {
-    $('.popup-modal').magnificPopup({
-      type: 'inline',
-      preloader: false,
-      focus: '#username',
-      modal: true
-    });
-    $(document).on('click', '.popup-modal-dismiss', function (egg) {
-      egg.preventDefault();
-      $.magnificPopup.close();
-    });
-  });
 });

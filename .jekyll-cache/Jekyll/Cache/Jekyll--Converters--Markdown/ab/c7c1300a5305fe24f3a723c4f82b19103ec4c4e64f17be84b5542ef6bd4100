@@ -1,0 +1,116 @@
+I"_$
+<aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fa fa-file-text"></i> Разделы</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#использование-sx-os" id="markdown-toc-использование-sx-os">Использование SX OS</a>    <ul>
+      <li><a href="#переключение-между-кастомной-и-официальной-пошивкой" id="markdown-toc-переключение-между-кастомной-и-официальной-пошивкой">Переключение между кастомной и официальной пошивкой</a></li>
+      <li><a href="#структура-файлов-на-карте-памяти" id="markdown-toc-структура-файлов-на-карте-памяти">Структура файлов на карте памяти</a></li>
+      <li><a href="#создание-резервной-копии-emunand" id="markdown-toc-создание-резервной-копии-emunand">Создание резервной копии EmuNAND</a></li>
+      <li><a href="#homebrew-menu" id="markdown-toc-homebrew-menu">Homebrew Menu</a></li>
+      <li><a href="#установка-игр" id="markdown-toc-установка-игр">Установка игр</a></li>
+      <li><a href="#чего-нельзя-делать-на-чипованной-приставке" id="markdown-toc-чего-нельзя-делать-на-чипованной-приставке">Чего нельзя делать на чипованной приставке</a></li>
+      <li><a href="#полезнгые-инструкции" id="markdown-toc-полезнгые-инструкции">Полезнгые инструкции</a></li>
+    </ul>
+  </li>
+</ul>
+
+  </nav>
+</aside>
+
+<hr />
+
+<div class="notice--warning">Если вы попали в это руководство впервые и не знаете как прошивается Switch, рекомендуем начать знакомство с ним с <a href="/" target="_blank">первой страницы</a></div>
+
+<div class="notice">Если вам помогло или просто понравилось это руководство, то мы принимаем <a href="http://customfw.xyz/donations" target="_blank">пожертвования</a>.<br />По вопросам, касающимся взлома и руководства, обращайтесь <a href="http://customfw.xyz/contacts" target="_blank">сюда</a></div>
+
+<div class="notice--warning"><strong>Если приставка зависла или не подаёт признаков жизни, выключите её удерживанием кнопки (POWER) 30 секунд, затем включите и пробросьте пейлоад!</strong></div>
+
+<hr />
+
+<h2 id="использование-sx-os">Использование SX OS</h2>
+
+<h3 id="переключение-между-кастомной-и-официальной-пошивкой">Переключение между кастомной и официальной пошивкой</h3>
+
+<ol>
+  <li>Выключите пиставку</li>
+  <li>Включите приставку, удерживая кнопку повышения громкости, чтобы попасть в меню SXOS
+    <ul>
+      <li>Нажмите “<strong>Boot original FW</strong>” для загрузки в официальную прошивку
+        <ul>
+          <li>В оригинальной прошивке вы можете играть онлайн в официально купленные игры, или игры скачанные из eShop</li>
+        </ul>
+      </li>
+      <li>Нажмите “<strong>Boot custom FW</strong>” для запуска EmuNAND</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="структура-файлов-на-карте-памяти">Структура файлов на карте памяти</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ┣ Nintendo - папка, в которой содержатся игры, установленные в официальной прошивке
+ ┃ ┣ Contents - папка с файлами игр
+ ┃ ┣ save - системные сохранения (не сохранения от игр; игровые сохранения находятся во внутренней памяти приставки)
+ ┃ ┗ Album - папка, содержащая скриншоты и видеозаписи
+ ┃ ┃ ┗ 2020 - год
+ ┃ ┃ ┃ ┗ 07 - месяц
+ ┃ ┃ ┃ ┃ ┗ 02 - день
+ ┃ ┃ ┃ ┃ ┃ ┗ 2020070213072200-DB1426D1DFD034027CECDE9C2DD914B8.jpg - скриншот
+ ┣ Emutendo - папка, в которой содержатся игры, установленные в EmuNAND. Подпапки аналогичны таковым из папки Nintendo
+ ┣ games - папка с играми в формате NSZ/NSP
+ ┣ switch - папка с Hombrew в формате NRO
+ ┣ sxos
+ ┃ ┣ titles - папка, в которую нужно класть переводы, читы и моды для игр
+ ┃ ┗ emunand - папка с EmuNAND
+ ┃ ┃ ┣ boot0.bin - BOOT0
+ ┃ ┃ ┣ boot1.bin - BOOT1
+ ┃ ┃ ┣ full.00.bin - этот файл и все файлы с похожим названием - копия внутренней памяти приставки, это и есть EmuNAND
+ ┃ ┃ ┣ full.01.bin
+ ┃ ┃ ┣ full.02.bin
+ ┃ ┃ ┣ full.03.bin
+ ┃ ┃ ┣ full.04.bin
+ ┃ ┃ ┣ full.05.bin
+ ┃ ┃ ┣ full.06.bin
+ ┃ ┃ ┗ full.07.bin
+ ┣ license.dat - файл лицензии
+ ┗ boot.dat - сама SX OS 
+</code></pre></div></div>
+<h3 id="создание-резервной-копии-emunand">Создание резервной копии EmuNAND</h3>
+
+<ul>
+  <li>Для создания резервной копии EmuNAND, просто скопируйте папку <code class="language-plaintext highlighter-rouge">sxos/emunand</code> в удобное место</li>
+  <li>Для восстановления EmuNAND из резервной копии, просто скопируйте сохраненную копию обратно на карте памяти</li>
+  <li>В EmuNAND хранятся ваши сейвы, так что восстановив копию EmuNAND с ПК, ваши сейвы вернутся к тому моменту, в который была сделана копия EmuNAND</li>
+</ul>
+
+<h3 id="homebrew-menu">Homebrew Menu</h3>
+
+<p><strong>HBM</strong> - это приложение, которое позволяет запустить на приставке Homebrew в формате NRO</p>
+
+<ul>
+  <li>Для запуска HBM запустите Альбомы
+  <img src="/images/screens/gallery.jpg" alt="" /></li>
+  <li>Для установки приложений хоумбрю просто скопируйте файл <code class="language-plaintext highlighter-rouge">.nro</code> в папку <code class="language-plaintext highlighter-rouge">/switch/</code> на SD-карте.</li>
+  <li>Список доступных приложений ищите в <a href="https://www.switchbru.com/appstore/#/" target="_blank">Switch Appstore</a> или в приложении “<strong>HB App Store</strong>”, которое так же достиупно в Homebrew Menu</li>
+  <li><a href="https://vk.com/@pg_testing-homebrew-apps-for-switch">Список полезных Homebrew приложений для Switch</a></li>
+</ul>
+
+<h3 id="установка-игр">Установка игр</h3>
+
+<p>Инструкция по установке игр находится в разделе <a href="games" target="_blank">Установка игр</a></p>
+
+<h3 id="чего-нельзя-делать-на-чипованной-приставке">Чего нельзя делать на чипованной приставке</h3>
+
+<ul>
+  <li>На SX Core и SX Lite в данный момент не работают пейлоады созданные для Fusée Gelée. Это добавляет некоторые ограничения для пользователей приставок с этими чипами. Например, в данный момент нельзя использовать Linux или Android. Нельзя сделать полный дамп ключей, нельзя использовать incognito и прочие ограничения</li>
+  <li>Нельзя использовать ChoiDujourNX для обновления прошивки. <strong>Это приведёт к брику!</strong></li>
+  <li>Нельзя использовать incognito в tinfoil. <strong>Это приведёт к брику!</strong></li>
+</ul>
+
+<h3 id="полезнгые-инструкции">Полезнгые инструкции</h3>
+
+<ul>
+  <li>Резервное копирование и восстановление сохранений(https://switch.customfw.xyz/backup-saves)</li>
+  <li>https://switch.customfw.xyz/link-account</li>
+</ul>
+:ET

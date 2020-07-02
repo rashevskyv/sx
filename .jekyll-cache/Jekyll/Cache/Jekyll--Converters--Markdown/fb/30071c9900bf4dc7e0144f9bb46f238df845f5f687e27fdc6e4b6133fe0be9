@@ -1,0 +1,18 @@
+I"<
+<ol>
+  <li>
+    <p>Вставьте карту памяти в ПК и отформатируйте её в FAT32 с помощью <a href="https://rufus.ie/" target="_blank">rufus</a></p>
+
+    <p class="text-center notice--info"><img src="/images/screens/rufus.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Скачайте <code class="language-plaintext highlighter-rouge">sxchip.zip</code> из <a href="https://github.com/rashevskyv/switch/releases/latest" target="_blank">репозитория кефира</a> и распакуйте архив в корень вашей карты памяти</p>
+
+    <p class="text-center notice--info"><img src="/images/screens/sx_folder.png" alt="" /></p>
+  </li>
+  <li>
+    <p>Вставьте карту памяти в приставку и включите е</p>
+  </li>
+</ol>
+
+:ET

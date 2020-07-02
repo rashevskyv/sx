@@ -442,25 +442,51 @@ li > p:first-child {
   display: inline-flex;
   width: 200px;
   height: 80px;
-  background-color: red;
+  background-color: grey;
   color: white;
   font-size: 1em;
   line-height: 80px;
   justify-content: center;
   margin: 0 50px 50px 40px;
+  border-radius: 5px;
+
+  &:visited {
+    cursor: pointer;
+    color: white;
+    &:hover {
+      color: white;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: white;
+  }
+
   @include breakpoint($small) {
     margin: 0 50px 50px 100px;
   }
-
-  border-radius: 5px;
-
+  
+}
+.red {
+  background-color: red;
   &:hover {
-    background-color: rgb(105, 3, 3);
-    cursor: pointer;
+    background-color: darkred;
   }
   
   &:active {
-    background-color: rgb(175, 11, 11);
+    background-color: red;
+  }
+}
+
+.green {
+  background-color: green;
+  &:hover {
+    background-color: darkgreen;
+  }
+  
+  &:active {
+    background-color: green;
   }
 }
 
@@ -533,16 +559,117 @@ form {
 
 button.btn {
   height: 80px;
-  min-width: 200px;;
-  border: 2px solid #bbc1c1;;
-  background-color: #dedfdf;;
+  min-width: 200px;
+  border: 2px solid #bbc1c1;
+  background-color: #dedfdf;
   border-radius: 5px;
 
   &:hover {
-    background-color: #bbc1c1;;
+    background-color: #bbc1c1;
   }
 
     &:active {
-    background-color: rgb(231, 231, 231);;
+    background-color: rgb(231, 231, 231);
   }
+}
+
+.radio-toolbar input[type="radio"] {
+  display: none;
+}
+
+.radio-toolbar label {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 4px 11px;
+  font-family: Arial;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.radio-toolbar input[type="radio"]:checked+label {
+  background-color: #bbb;
+}
+
+input[disabled]+label {
+  color: #b3afaf;
+}
+
+.overlay_popup {
+  display:none;
+  position:fixed;
+  z-index: 999;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  background:#000;
+  opacity:0.5;
+}
+
+.popup {
+  display: none;
+  position: relative;
+  z-index: 1000;
+  margin:0 25% 0 25%;
+  width:50%;
+}
+
+
+
+//////////////////////////
+
+
+/* text-based popup styling */
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 25px;
+  width:auto;
+  max-width: 400px;
+  margin: 0 auto; 
+}
+
+/* 
+
+====== Zoom effect ======
+
+*/
+.mfp-zoom-in {
+  
+  /* start state */
+  .mfp-with-anim {
+    opacity: 0;
+    transition: all 0.2s ease-in-out; 
+    transform: scale(0.8); 
+  }
+  
+  &.mfp-bg {
+    opacity: 0;
+	  transition: all 0.3s ease-out;
+  }
+  
+  /* animate in */
+  &.mfp-ready {
+    .mfp-with-anim {
+      opacity: 1;
+      transform: scale(1); 
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+  
+  /* animate out */
+  &.mfp-removing {
+    
+    .mfp-with-anim {
+      transform: scale(0.8); 
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+    
+  }
+  
 }

@@ -4,6 +4,12 @@ main:
     url: http://customfw.xyz
   - title: "<i>Купить<br>прошитую</i>"
     url: https://nincfw.olx.ua/
+  - title: "Настройка<br>приставки"
+    url: /sx_setup
+  - title: "Использование<br>приставки"
+    url: /usage
+  - title: "Установка игр"
+    url: /games
   - title: "Пожертвования"
     url: http://customfw.xyz/donations
   - title: "Связаться с нами"

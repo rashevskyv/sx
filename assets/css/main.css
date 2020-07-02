@@ -3133,7 +3133,7 @@ a.reversefootnote:hover { text-decoration: underline; }
 
 .masthead a:visited, .sidebar a:visited { color: #494e52 !important; }
 
-html { /* Убирает прокрутку по горизонтале, для мобильной версии */ overflow-x: hidden; /*margin-bottom: 0!important;*/ }
+html { /* Убирает прокрутку по горизонтале, для мобильной версии */ overflow-x: hidden; scroll-behavior: smooth; /*margin-bottom: 0!important;*/ }
 
 body { background-color: #FFFFFF !important; }
 

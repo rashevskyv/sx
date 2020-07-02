@@ -13,6 +13,7 @@
 html {
  /* Убирает прокрутку по горизонтале, для мобильной версии */
  overflow-x: hidden;
+ scroll-behavior: smooth;
  /*margin-bottom: 0!important;*/
 }
 

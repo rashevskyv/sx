@@ -80,7 +80,7 @@ excerpt: 'Наконец-то можно взломать любой Nintendo Sw
 		<input type="radio" id="other" name="country" value="other" disabled>
 		<span class="tooltip">
 			<input type="radio" id="rus" name="country" value="rus" disabled>
-			<label for="other" class="popup-modal" rel="popup1">Другое (указать в сообщении)</label>
+			<label for="other" rel="popup1">Другое (указать в сообщении)</label>
 			<span class="bottom">В данный момент чипы поступили только на склад в Украине. Приносим свои извинения за неудобства.</span>
 		</span>
 	</fieldset>
@@ -90,7 +90,7 @@ excerpt: 'Наконец-то можно взломать любой Nintendo Sw
 		<label for="core">Обычный Switch</label>
 		<span class="tooltip">
 			<input type="radio" id="lite" name="console" value="lite" disabled>
-			<label for="lite" class="popup-modal" rel="popup1">Switch Lite</label>
+			<label for="lite" rel="popup1">Switch Lite</label>
 			<span class="bottom">В данный момент чипы SX Lite ещё не поступили на склад. Ожидаются ближен к концу месяца. Спасибо за понимание.</span>
 		</span>
 	</fieldset>

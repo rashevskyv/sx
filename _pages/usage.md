@@ -76,6 +76,6 @@ permalink: usage
 
 ### Полезные инструкции 
 
-* [Резервное копирование и восстановление сохранений](https://switch.customfw.xyz/backup-saves){:target="_blank"
-* [Связывание учётной записи консоли с аккаунтом Nintendo](https://switch.customfw.xyz/link-account){:target="_blank" - если вы связали аккаунт в ходе этой инструкции, не используйте данный метод. Если вы этого не сделали, то иcпользуйте только рекомендуемый метод 
+* [Резервное копирование и восстановление сохранений](https://switch.customfw.xyz/backup-saves){:target="_blank"}
+* [Связывание учётной записи консоли с аккаунтом Nintendo](https://switch.customfw.xyz/link-account){:target="_blank"} - если вы связали аккаунт в ходе этой инструкции, не используйте данный метод. Если вы этого не сделали, то иcпользуйте только рекомендуемый метод 
 * [Мультиплеер на прошитой консоли (LAN Play)](https://switch.customfw.xyz/lanplay){:target="_blank"}

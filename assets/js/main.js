@@ -90,3 +90,6 @@ window.scrollBy({
 document.querySelector('.hello').scrollIntoView({ 
   behavior: 'smooth' 
 });
+
+// function SendMail () {
+//   window.open('mailto:rashevsky.v@gmail.com?subject=Чиповка Switch&body=body');}

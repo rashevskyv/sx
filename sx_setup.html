@@ -293,6 +293,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   </li>
   <li><a href="#активация-sx-os" id="markdown-toc-активация-sx-os">Активация SX OS</a></li>
   <li><a href="#создание-резервной-копии-данных-приставки" id="markdown-toc-создание-резервной-копии-данных-приставки">Создание резервной копии данных приставки</a></li>
+  <li><a href="#работа-с-emunand-в-программе-nxnandmanager-опционально-только-windows" id="markdown-toc-работа-с-emunand-в-программе-nxnandmanager-опционально-только-windows">Работа с EmuNAND в программе NxNandManager (опционально, только Windows)</a></li>
 </ul>
 
   </nav>
@@ -414,6 +415,76 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <li>Скопируйте файл <code class="language-plaintext highlighter-rouge">license.dat</code> в папку <code class="language-plaintext highlighter-rouge">sxos/emunand</code></li>
   <li>Скопируйте на ПК папку <code class="language-plaintext highlighter-rouge">sxos/emunand</code>. Содержимое этой папки и есть ваш бекап. Не потеряйте его!</li>
 </ol>
+
+<h2 id="работа-с-emunand-в-программе-nxnandmanager-опционально-только-windows">Работа с EmuNAND в программе NxNandManager (опционально, только Windows)</h2>
+<details class="spoiler"><summary class="spoiler-title">Раскрыть</summary><div class="spoiler-body">
+<p class="notice--warning">Прежде чем приступить к этому разделу, обязательно скопируйте папку <code class="language-plaintext highlighter-rouge">sxos/emunand</code> на ПК, если ещё не делали этого. В программе же выбирайте те файлы, что находятся у вас на карте памяти. Если после проделанных манипуляций что-то перестанет работать, вы всегда сможете просто вернуть обратно те файлы, что вы скопировали на ПК и получить работоспособный EmuNAND.</p>
+
+<ol>
+  <li>Выключите Switch и вставьте его карту памяти в ПК</li>
+  <li>Скачайте и распакуйте на ваш ПК программу <a href="https://github.com/eliboa/NxNandManager/releases/latest" target="_blank">NxNandManager</a></li>
+  <li>Запустите программу <a href="https://github.com/eliboa/NxNandManager/releases/latest" target="_blank">NxNandManager</a></li>
+  <li>Перейдите в <strong>File</strong> -&gt; <strong>Open File</strong> и выберите файл <code class="language-plaintext highlighter-rouge">sxos/emunand/full.00.bin</code></li>
+  <li>Перейдите в <strong>Options</strong> -&gt; <strong>Configure keyset</strong>, нажмите <strong>Import keys from file</strong> и выберите файл <code class="language-plaintext highlighter-rouge">switch/prod.keys</code></li>
+  <li>Нажмите Save
+    <ul>
+      <li>Если в поле <strong>Device ID</strong> написано <strong>BAD CRYPTO</strong>, то вы выбрали ключи не от своей приставки! Сделайте дамп ключей заново!</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="установка-incognito">Установка Incognito</h3>
+
+<p class="notice--info">Установив Incognito, вы уберёте личную информацию, необходимую для авторизации консоли на серверах Nintendo, из памяти вашей приставки, тем самым вы сможете выходить на консоли в интернет наверняка зная, что это не приведёт к бану.</p>
+
+<ol>
+  <li>Перейдите в <strong>Options</strong> -&gt; <strong>Resize NAND (RAWNAND, FULLNAND)</strong></li>
+  <li>Нажмите <strong>Yes</strong>, нажмите <strong>OK</strong></li>
+  <li>Вставьте карту памяти обратно в приставку и включите Switch</li>
+  <li>Перейдите в “<strong>Системные настройки</strong>” -&gt; “<strong>Система</strong>” -&gt; “<strong>Серийные номера</strong>”. Если в поле “<strong>Консоль</strong>” не указан серийный номер, то всё сделано верно</li>
+  <li>Выключите Switch, вставьте карту памяти обратно в ПК</li>
+  <li>В программе <a href="https://github.com/eliboa/NxNandManager/releases/latest" target="_blank">NxNandManager</a> перейдите в <strong>File</strong> -&gt; <strong>Open File</strong> и выберите файл <code class="language-plaintext highlighter-rouge">sxos/emunand/full.00.bin</code></li>
+</ol>
+
+<h3 id="уменьшение-размера-emunand">Уменьшение размера EmuNAND</h3>
+
+<ol>
+  <li>Перейдите в <strong>Options</strong> -&gt; <strong>Resize NAND (RAWNAND, FULLNAND)</strong>
+    <ul>
+      <li>Если вам не нужны сохранения в EmuNAND, поставьте галочку напротив <strong>Format USER (all data in partition will be lost)</strong></li>
+    </ul>
+  </li>
+  <li>В поле <strong>New size for USER</strong> укажите тот размер в мегабайтах, который будет доступен в качестве внутренней памяти консоли после уменьшения размера EmuNAND. Рекомендую указывать не менее 7548 Mb
+     * Если на разделе много пользовательских данных, например, сейвов, то вы не сможете уменьшить EmuNAND меньше занятого объема. В таком случае нужно либо форматировать USER, либо уменьшать в доступных пределах
+     * В поле <strong>Total size for new file</strong> будет указан итоговый размер файла EmuNAND после уменьшения размера</li>
+  <li>Нажмите <strong>Save as…</strong>, чтобы выбрать место сохранения EmuNAND</li>
+  <li>Нажмите Save, чтобы сохранить EmuNAND с выбранным размером</li>
+</ol>
+
+<h3 id="разбиение-emunand-на-части-менее-4х-гб">Разбиение EmuNAND на части менее 4х Гб</h3>
+
+<ol>
+  <li>Скачайте <a href="https://sourceforge.net/projects/fsplit/files/latest/download" target="_blank">File Splitter</a> и распакуйте программу в удобное место</li>
+  <li>Запустите программу и в поле <code class="language-plaintext highlighter-rouge">File</code> укажите путь к сохраненному ранее обрезанному EmuNAND (<code class="language-plaintext highlighter-rouge">RAWNAND.resized</code>)</li>
+  <li>В поле <strong>Split Size</strong> выставьте <strong>3.9 Gigibytes</strong> и нажмите <strong>Start</strong> для начала разбиения</li>
+  <li>По окончанию процесса в папке программы появятся файлы вида <code class="language-plaintext highlighter-rouge">RAWNAND_X(Y).resized</code>, где <strong>X</strong> - порядковый номер файлов, а <strong>Y</strong> - общее количество файлов.</li>
+  <li>Переименуйте файлы в <code class="language-plaintext highlighter-rouge">full.00.bin</code>, <code class="language-plaintext highlighter-rouge">full.01.bin</code>, <code class="language-plaintext highlighter-rouge">full.02.bin</code> и т. п., внимательно соблюдая очерёдность.</li>
+  <li>Перейдите в папку <code class="language-plaintext highlighter-rouge">/sxos/emunand</code> на карте памяти свитча и удалите все файлы вида <code class="language-plaintext highlighter-rouge">full.XX.bin</code></li>
+  <li>Переместите все файлы вида <code class="language-plaintext highlighter-rouge">full.XX.bin</code> из папки с программой <strong>File Splitter</strong> в папку <code class="language-plaintext highlighter-rouge">/sxos/emunand</code></li>
+  <li>Вставьте карту памяти обратно в приставку и включите Switch</li>
+  <li>
+    <p>После того, как приставка загрузится, перейдите в Альбомы (просто запустите их), чтобы убедиться, что вы загрузились именно в <strong>EMUNAND</strong></p>
+
+    <p class="text-center notice--info"><img src="/images/screens/sx_valid.png" alt="" /></p>
+  </li>
+  <li>Запустите <strong>DBI</strong> через <strong>Альбомы</strong> и обратите внимание на размер <strong>NAND</strong>, он должен совпадать с тем, который вы указали в NxNandManager
+    <ul>
+      <li>Нужно смотреть не на количество свободного места, а на общее количество места</li>
+    </ul>
+  </li>
+</ol>
+
+</div></details>
 
 <hr />
 

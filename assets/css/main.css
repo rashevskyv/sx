@@ -3261,7 +3261,7 @@ li > p:first-child { margin-top: 0; }
 
 @media (min-width: 48em) { .page__hero--overlay .page__title { font-size: 2.5em; } }
 
-.button { display: inline-flex; width: 200px; height: 80px; background-color: grey; color: white; font-size: 1em; line-height: 80px; justify-content: center; margin: 0 50px 50px 40px; border-radius: 5px; }
+.button { display: inline-flex; min-width: 200px; height: 80px; background-color: grey; color: white; font-size: 1em; line-height: 80px; justify-content: center; margin: 0 50px 50px 40px; border-radius: 5px; padding: 0 15px; }
 
 .button:visited { cursor: pointer; color: white; }
 
@@ -3282,6 +3282,12 @@ li > p:first-child { margin-top: 0; }
 .green:hover { background-color: darkgreen; }
 
 .green:active { background-color: green; }
+
+.blue { background-color: #2d2d9e; }
+
+.blue:hover { background-color: darkblue; }
+
+.blue:active { background-color: #2d2d9e; }
 
 .small_left { display: block; margin-left: auto; margin-right: auto; width: 50%; }
 

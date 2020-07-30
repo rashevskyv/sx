@@ -441,7 +441,7 @@ li > p:first-child {
 
 .button { // кнопка 
   display: inline-flex;
-  width: 200px;
+  min-width: 200px;
   height: 80px;
   background-color: grey;
   color: white;
@@ -450,6 +450,7 @@ li > p:first-child {
   justify-content: center;
   margin: 0 50px 50px 40px;
   border-radius: 5px;
+  padding: 0 15px;
 
   &:visited {
     cursor: pointer;
@@ -488,6 +489,17 @@ li > p:first-child {
   
   &:active {
     background-color: green;
+  }
+}
+
+.blue {
+  background-color: rgb(45, 45, 158);
+  &:hover {
+    background-color: darkblue;
+  }
+  
+  &:active {
+    background-color: rgb(45, 45, 158);
   }
 }
 

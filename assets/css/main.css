@@ -3351,4 +3351,10 @@ input[disabled] + label { color: #b3afaf; }
 
 .mfp-zoom-in.mfp-removing.mfp-bg { opacity: 0; }
 
+.author__urls-wrapper button { height: 50px !important; min-width: 100px !important; }
+
+.toc__menu { /* hide sub sub links on small screens*/ }
+
+.toc__menu li > ul li { display: block; }
+
 /*# sourceMappingURL=main.css.map */

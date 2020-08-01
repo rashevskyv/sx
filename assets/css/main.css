@@ -3357,4 +3357,8 @@ input[disabled] + label { color: #b3afaf; }
 
 .toc__menu li > ul li { display: block; }
 
+.notice--warning, .notice--danger, .notice--info, .notice--success, .notice--primary, .notice, .toc, .author__name { font-size: 1rem !important; }
+
+@media (min-width: 64em) { .notice--warning, .notice--danger, .notice--info, .notice--success, .notice--primary, .notice, .toc, .author__name { font-size: .8rem !important; } }
+
 /*# sourceMappingURL=main.css.map */

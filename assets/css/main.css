@@ -3139,8 +3139,6 @@ body { background-color: #FFFFFF !important; }
 
 @media screen and (max-width: 1025px) { body { font-size: 1.2em; line-height: 1.3em; } }
 
-.page__content { font-size: 1.2em !important; }
-
 h2, h3 { text-align: left !important; margin: 1.2em 0; }
 
 .author__content { text-align: center !important; }

@@ -285,6 +285,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 <ul class="toc__menu" id="markdown-toc">
   <li><a href="#установка-sxos" id="markdown-toc-установка-sxos">Установка SXOS</a>    <ul>
       <li><a href="#что-понадобится" id="markdown-toc-что-понадобится">Что понадобится</a></li>
+      <li><a href="#подготовительные-работы" id="markdown-toc-подготовительные-работы">Подготовительные работы</a></li>
       <li><a href="#установка-kefir-на-карту-памяти" id="markdown-toc-установка-kefir-на-карту-памяти">Установка kefir на карту памяти</a></li>
       <li><a href="#обновление-системного-по-на-приставке" id="markdown-toc-обновление-системного-по-на-приставке">Обновление системного ПО на приставке</a></li>
       <li><a href="#установка-emunand" id="markdown-toc-установка-emunand">Установка EmuNAND</a></li>
@@ -310,6 +311,17 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 <p class="notice--info">В данном руководстве мы не рассматриваем сам процесс установки чипа в приставку. Инструкции для самостоятельной установки имеются на <a href="https://sx.xecuter.com/#manuals" target="_blank">официальном сайте Team Xecuter</a>, так же в интернете можно найти множество видео, показывающих весь процесс.</p>
 
+<details class="spoiler"><summary class="spoiler-title">Видеоинструкция</summary><div class="spoiler-body">
+<p class="notice--warning">ВНИМАНИЕ!!! Мы не рекомендуем слепо следовать видео-инструкции! Используйте её только в качестве вспомогательной! Дело в том, что текстовый гайд постоянно обновляется. Невозможно следить за всеми обновлениями в гайде и каждый раз менять видео-инструкцию вслед за ним! Поэтому текстовый гайд всегда будет более точным и более актуальным, чем видео!</p>
+
+<div style="margin:0 auto;" class="text-center notice--info">
+  <div class="ytcontainer">
+    <iframe width="1667" height="946" class="yt" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/f3I4DmYhVPw?start="></iframe>
+  </div>
+</div>
+
+</div></details>
+
 <h2 id="установка-sxos">Установка SXOS</h2>
 
 <h3 id="что-понадобится">Что понадобится</h3>
@@ -327,7 +339,9 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <li>Кабель USB type-A на USB type-C для подключения приставки к ПК</li>
 </ul>
 
-<h3 id="установка-kefir-на-карту-памяти">Установка kefir на карту памяти</h3>
+<h3 id="подготовительные-работы">Подготовительные работы</h3>
+
+<p class="notice--warning">Нужно выполнить только при первоначальной настройке! Не нужно делать, если приставка уже настроена и работает, а вы просто хотите обновить кефир!</p>
 
 <ol>
   <li>
@@ -335,6 +349,11 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
     <p class="text-center notice--info"><img src="/images/screens/rufus.png" alt="" /></p>
   </li>
+</ol>
+
+<h3 id="установка-kefir-на-карту-памяти">Установка kefir на карту памяти</h3>
+
+<ol>
   <li>
     <p>Скачайте <code class="language-plaintext highlighter-rouge">sxchip.zip</code> из <a href="https://github.com/rashevskyv/switch/releases/latest" target="_blank">репозитория кефира</a> и распакуйте архив в корень вашей карты памяти</p>
 

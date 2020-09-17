@@ -9,10 +9,10 @@ author_profile: true
 
 * Свежая версия {% include abbr/kefir_addr.txt %}
 * Прошивка {% include /vars/update_version.txt %} (скачайте по любой из ссылок):
-	* [magnet](magnet:?xt=urn:btih:B23F438BA3FED6462C067496F14D37D88B46BEF8&dn=10.1.0.zip&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce){:target="_blank"}
-	* [ЯД](https://yadi.sk/d/BzsYZLjroSgLjw){:target="_blank"}
-	* [GD](https://drive.google.com/file/d/10L8zKy-Js9L3QyljOqBJLz-zTXDTxofO/view?usp=sharing){:target="_blank"}
-	* [MEGA](https://mega.nz/file/Bt1h3QpD#oCQVvmE57c_RNveZIl1wVZ30ktposLsUrUoEMIgcKk8){:target="_blank"}
+	* [magnet](magnet:?xt=urn:btih:F88BD58A654A766142339A6E5B24ABF3FE475DC7&dn=10.2.0-daybreak.zip&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce){:target="_blank"}
+	* [ЯД](https://yadi.sk/d/Gxe4Aa-TTg-w3A){:target="_blank"}
+	* [GD](https://drive.google.com/file/d/1TMU4m3rCqI6I-zeIlfm6ZQ27cdtVEZ4B/view?usp=sharing){:target="_blank"}
+	* [MEGA](https://mega.nz/file/El1kgQKI#WlT4eigPHlDJF0FLci4ikLuRdVESjBny92Ce2P7Y4dE){:target="_blank"}
 
 ## Инструкция
 

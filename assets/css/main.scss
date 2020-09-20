@@ -367,9 +367,8 @@ li > p:first-child {
   position: relative;
   z-index: 5;
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
-  margin: 0 15vw;
+  //margin: 0 15vw;
   height: 80vh;
   @include breakpoint($large) {
     height: 50vh;
@@ -383,6 +382,46 @@ li > p:first-child {
 }
 
 .wrapper__hero {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0 20px;
+  height: 35%;
+  // justify-content: center;
+  width: 100%;
+  align-items: center;
+
+  @include breakpoint($large) {
+    height: 50%;
+    flex-direction: row;
+    justify-content: center;
+    &>*{
+      margin: 50px;
+    }
+  }
+
+  @include breakpoint($medium) {
+    height: 50%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.buttons {
+  width: 250px;
+  @include breakpoint($large) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    margin-top: 0;
+  }
+
 }
 
 .centered { // центрирует блок по вертикали
@@ -437,16 +476,22 @@ li > p:first-child {
 
 .button { // кнопка 
   display: inline-flex;
-  min-width: 200px;
   height: 80px;
+  width: 250px;
   background-color: grey;
   color: white;
   font-size: 1em;
   line-height: 80px;
   justify-content: center;
-  margin: 0 50px 50px 40px;
+  margin: 0;
+  margin-bottom: 30px;
   border-radius: 5px;
   padding: 0 15px;
+
+  @include breakpoint($large) {
+    margin: 40px;
+  }
+
 
   &:visited {
     cursor: pointer;
@@ -461,9 +506,6 @@ li > p:first-child {
     color: white;
   }
 
-  @include breakpoint($small) {
-    margin: 0 50px 50px 100px;
-  }
   
 }
 .red {

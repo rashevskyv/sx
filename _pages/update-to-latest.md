@@ -5,6 +5,14 @@ author_profile: true
 ---
 {% include toc title="Разделы" %}
 
+{% spoiler Видеоинструкция %}
+
+{% include youtube.html id="f3I4DmYhVPw" %}
+{: .text-center}
+{: .notice--info}
+
+{% endspoiler %}
+
 ## Что понадобится
 
 * Свежая версия {% include abbr/kefir_addr.txt %}

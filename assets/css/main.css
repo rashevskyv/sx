@@ -6719,7 +6719,7 @@ li > p:first-child {
   display: flex;
   flex-direction: column;
   padding: 20px 20px 0 20px;
-  height: 35%;
+  height: 60%;
   width: 100%;
   align-items: center; }
   @media (min-width: 64em) {
@@ -6759,7 +6759,7 @@ li > p:first-child {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 50vh;
+  min-height: 70vh;
   position: relative;
   padding: 0 !important;
   margin: 0 !important; }

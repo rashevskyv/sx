@@ -369,10 +369,7 @@ li > p:first-child {
   display: flex;
   flex-direction: column;
   //margin: 0 15vw;
-  height: 80vh;
-  @include breakpoint($large) {
-    height: 50vh;
-  }
+  height: 50vh;
 }
 
 .hero {
@@ -399,11 +396,11 @@ li > p:first-child {
     }
   }
 
-  @include breakpoint($medium) {
-    height: 50%;
-    flex-direction: column;
-    justify-content: center;
-  }
+  // @include breakpoint($medium) {
+  //   height: 50%;
+  //   flex-direction: column;
+  //   justify-content: center;
+  // }
 
   &__center {
     display: flex;
@@ -446,7 +443,7 @@ li > p:first-child {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   min-height: 80vh; // высота картинки
+   min-height: 50vh; // высота картинки
   position: relative;
   padding: 0 !important;
   margin: 0 !important;

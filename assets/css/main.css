@@ -6708,9 +6708,7 @@ li > p:first-child {
   position: relative;
   z-index: 5;
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
-  margin: 0 15vw;
   height: 80vh; }
   @media (min-width: 64em) {
     .hero__text {
@@ -6719,6 +6717,40 @@ li > p:first-child {
 .hero {
   display: flex;
   justify-content: space-evenly; }
+
+.wrapper__hero {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0 20px;
+  height: 35%;
+  width: 100%;
+  align-items: center; }
+  @media (min-width: 64em) {
+    .wrapper__hero {
+      height: 50%;
+      flex-direction: row;
+      justify-content: center; }
+      .wrapper__hero > * {
+        margin: 50px; } }
+  @media (min-width: 48em) {
+    .wrapper__hero {
+      height: 50%;
+      flex-direction: column;
+      justify-content: center; } }
+  .wrapper__hero__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+.buttons {
+  width: 250px; }
+  @media (min-width: 64em) {
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: auto;
+      margin-top: 0; } }
 
 #main {
   max-width: 95%; }
@@ -6756,16 +6788,20 @@ li > p:first-child {
 
 .button {
   display: inline-flex;
-  min-width: 200px;
   height: 80px;
+  width: 250px;
   background-color: grey;
   color: white;
   font-size: 1em;
   line-height: 80px;
   justify-content: center;
-  margin: 0 50px 50px 40px;
+  margin: 0;
+  margin-bottom: 30px;
   border-radius: 5px;
   padding: 0 15px; }
+  @media (min-width: 64em) {
+    .button {
+      margin: 40px; } }
   .button:visited {
     cursor: pointer;
     color: white; }
@@ -6774,9 +6810,6 @@ li > p:first-child {
   .button:hover {
     cursor: pointer;
     color: white; }
-  @media (min-width: 37.5em) {
-    .button {
-      margin: 0 50px 50px 100px; } }
 
 .red {
   background-color: red; }

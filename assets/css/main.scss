@@ -381,8 +381,8 @@ li > p:first-child {
 .wrapper__hero {
   display: flex;
   flex-direction: column;
-  padding: 20px 20px 0 20px;
-  height: 60%;
+  padding: 15px;
+  height: 50vh;
   // justify-content: center;
   width: 100%;
   align-items: center;
@@ -443,7 +443,7 @@ li > p:first-child {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-   min-height: 70vh; // высота картинки
+   min-height: 100vh; // высота картинки
   position: relative;
   padding: 0 !important;
   margin: 0 !important;

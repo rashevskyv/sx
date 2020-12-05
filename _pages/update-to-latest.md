@@ -17,10 +17,10 @@ author_profile: true
 
 * Свежая версия {% include abbr/kefir_addr.txt %}
 * Прошивка {% include /vars/update_version.txt %} (скачайте по любой из ссылок):
-	* [magnet](magnet:?xt=urn:btih:F88BD58A654A766142339A6E5B24ABF3FE475DC7&dn=10.2.0-daybreak.zip&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce){:target="_blank"}
-	* [ЯД](https://yadi.sk/d/Gxe4Aa-TTg-w3A){:target="_blank"}
-	* [GD](https://drive.google.com/file/d/1TMU4m3rCqI6I-zeIlfm6ZQ27cdtVEZ4B/view?usp=sharing){:target="_blank"}
-	* [MEGA](https://mega.nz/file/El1kgQKI#WlT4eigPHlDJF0FLci4ikLuRdVESjBny92Ce2P7Y4dE){:target="_blank"}
+	* [magnet](magnet:?xt=urn:btih:4421A5C290B43EBE8C28C1EFB5A1229275C2177E&dn=11.0.0.zip&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce){:target="_blank"}
+	* [ЯД](https://yadi.sk/d/PkQT1KqqIDV2ZQ){:target="_blank"}
+	* [GD](https://drive.google.com/file/d/12JZ2fHwWfBzhIEhNYE0zEpp_uDXVRuLf/view?usp=sharing){:target="_blank"}
+	* [MEGA](https://mega.nz/file/IDJTTSSD#3rNYrs5DmQe8BS0JwPZDEqwx98BuXwoBaQ73WDZiK2w){:target="_blank"}
 
 ## Инструкция
 
@@ -38,7 +38,7 @@ author_profile: true
 	* `sxos/titles/0100000000001013`
 	* `sxos/titles/0100000000000352`
 1. Установите `.7z`-архив {% include abbr/kefir_addr.txt %}, если ещё не делали этого
-1. Скопируйте **содержимое** архива `{% include /vars/update_version.txt %}-daybreak.zip` с прошивкой в корень карты памяти
+1. Скопируйте **содержимое** архива `{% include /vars/update_version.txt %}.zip` с прошивкой в корень карты памяти
 	* Ещё раз - **содержимое** архива **с прошивкой**. Не архив с кефиром, **с прошивкой**! Архив с прошивкой расположен в части [Что понадобится](#что-понадобится). Нужно скопировать не сам архив, а именно его **содержимое**
 	* Вместо этого вы можете скачать архив со свежей версией системного ПО через приложение **FreshHay** прямо на вашей приставке. Для этого запустите [HBL](hbl){:target="_blank"} через игру, выберите приложение **FreshHay** и нажмите (A), чтобы начать закачку прошивки. Программа сама скачает последнюю версию системного ПО в папку `switch/FreshHay`. После, распакуйте скачанный архив с помощью **NXShell**. Архив будет находиться по пути `switch/Freshhay`
 1. Вставьте карту памяти обратно в приставку

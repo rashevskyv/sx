@@ -13,14 +13,17 @@ author_profile: true
 
 {% endspoiler %}
 
+Внимание! В данный момент последняя версию системного ПО, 11.0.0, работает не так хорошо, как 10.2.0! Например, MTP для установки игр и передачи файлов работать отказывается! Если ваш EmuNAND на этой версии системного ПО, то вы можете попробовать установить на него 10.2.0 по инструкции ниже, либо ждать новых версий SX OS! Не забудьте скинуть на ПК папку `sxos/emunand`, если решите понизить прошивку. В случае, если что-то пойдёт не так, вы всегда можете вернуть эту папку назад и тем самым восстановить состояние приставки до момента понижения прошивки! Если ваш EmuNAND на версии ниже, чем 10.2.0, просто обновите его через настройки! SysNAND можете обновлять через настройки до 11.0.0. НИКОГДА не обновляйте SysNAND через ChoiDujourNX
+{: .notice--warning}
+
 ## Что понадобится
 
 * Свежая версия {% include abbr/kefir_addr.txt %}
 * Прошивка {% include /vars/update_version.txt %} (скачайте по любой из ссылок):
-	* [magnet](magnet:?xt=urn:btih:4421A5C290B43EBE8C28C1EFB5A1229275C2177E&dn=11.0.0.zip&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce){:target="_blank"}
-	* [ЯД](https://yadi.sk/d/PkQT1KqqIDV2ZQ){:target="_blank"}
-	* [GD](https://drive.google.com/file/d/12JZ2fHwWfBzhIEhNYE0zEpp_uDXVRuLf/view?usp=sharing){:target="_blank"}
-	* [MEGA](https://mega.nz/file/IDJTTSSD#3rNYrs5DmQe8BS0JwPZDEqwx98BuXwoBaQ73WDZiK2w){:target="_blank"}
+	* [magnet](magnet:?xt=urn:btih:F88BD58A654A766142339A6E5B24ABF3FE475DC7&dn=10.2.0-daybreak.zip&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce){:target="_blank"}
+	* [ЯД](https://yadi.sk/d/Gxe4Aa-TTg-w3A){:target="_blank"}
+	* [GD](https://drive.google.com/file/d/1TMU4m3rCqI6I-zeIlfm6ZQ27cdtVEZ4B/view?usp=sharing){:target="_blank"}
+	* [MEGA](https://mega.nz/file/El1kgQKI#WlT4eigPHlDJF0FLci4ikLuRdVESjBny92Ce2P7Y4dE){:target="_blank"}
 
 ## Инструкция
 

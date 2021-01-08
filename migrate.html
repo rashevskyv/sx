@@ -266,205 +266,25 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 	  
 	  	
         <details class="spoiler"><summary class="spoiler-title">Зачем переходить на Atmosphere?</summary><div class="spoiler-body">
-<p>In October 2020 <a href="https://www.theverge.com/2020/10/2/21499297/team-xecuter-selling-nintendo-hacks-arrested-charged-fraud">two Xecuter Team leaders were arrested</a> - a campaign engaged in the development and support of SXOS, as well as the production of chips for modifying set-top boxes with a closed vulnerability.</p>
+<p>В октябре 2020 года <a href="https://www.theverge.com/2020/10/2/21499297/team-xecuter-selling-nintendo-hacks-arrested-charged-fraud" target="_blank">были арестованы два лидера Xecuter Team</a> - кампании, занимавшейся разработкой и поддержкой SXOS, а так же производством чипов для модификации приставок с закрытой уязвимостью.</p>
 
-<p>On December 1, 2020, the Switch system software update under version 11.0.0 is released and after 5 days the SXOS team released a firmware supporting this update. Everything seems to be going well and despite the arrests, the XTs are still working.</p>
+<p>1-го декабря 2020 года в свет выходит обновление системного ПО Switch под версией 11.0.0 и уже спустя 5 дней команда SXOS выпустила прошивку с поддержкой этого обновления. Казалось бы, всё идёт хорошо и несмотря на аресты, XT всё ещё работают.</p>
 
-<p>However, at about the same time, all Chinese sites that sold chips unanimously began to say that they had run out of chips and the prospects for the production of new batches were very dim. Rumors also began to spread that all chip manufacturing factories were closed and products had been confiscated. The staff was dispersed, and the ban on the sale of chips was launched from almost the top of the Chinese Communist Party. Which is not so hard to believe if you remember that the most powerful corporation Tencent is the official distributor of Nintendo products in China.</p>
+<p>Однако, примерно в это же время, все китайские площадки, продававшие чипы в один голос начали говорить о том, что чипы у них закончились и перспективы производства новых партий весьма призрачны. Так же начали распространяться слухи о том, что все производственные фабрики чипов закрыты, а продукция конфискована. Штат сотрудников разогнан, а запрет на продажу чипов пущен чуть ли не из верхушки Коммунистической партии Китая. Во что не так уж и сложно поверить, если вспомнить, что мощнейшая корпорация Tencent является официальным дистрибутором продукции Nintendo в Китае.</p>
 
-<p>The last straw confirming that evil tongues are probably right was the release of firmware 11.0.1, which at the time of this writing is still not working on SXOS.</p>
+<p>Последней же каплей, подтверждающей, что злые языки, вероятно, правы, стал выход прошивки 11.0.1, которая на момент написания этой заметки до сих пор не работает на SXOS.</p>
 
-<p>It should be noted that the 11.0.1 update was minor and Atmosphere was already working with it by the evening of the same day.</p>
+<p>Стоит отметить, что 11.0.1 обновление минорное и Atmosphere буквально к вечеру того же дня уже с ним работала.</p>
 
-<p>At the beginning of 2021, Atmosphere 0.17.0 was released, which already fully supported work on chip set-top boxes, so now you don’t have to wait for new versions of SXOS - it’s just no longer necessary.</p>
-
-</div></details>
-
-<h2 id="moving-from-sx-to-atmosphere">Moving from SX to Atmosphere</h2>
-
-<p>Choose the option that suits you and follow the instructions.</p>
-
-<details class="spoiler"><summary class="spoiler-title">Fusée Gelée flashing attachment or Caffeine flashing</summary><div class="spoiler-body">
-<ol>
-  <li>Insert the memory card of the set-top box into the PC</li>
-  <li>Install <span class="tooltip_container">
- <a href="https://github.com/rashevskyv/kefir/releases" target="_blank">kefir</a>
- <span class="tooltip"><i class="fas fa-caret-down"></i>
-     <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
-     </span>
- </span>
-</span> by choosing “<strong>Atmosphere</strong>” as an option (<code class="language-plaintext highlighter-rouge">atmo.zip</code> for manual installation)</li>
-  <li>Wait for the installation to complete, then return the memory card to the console</li>
-  <li>Turn on the console</li>
-  <li>If you had EmuNAND, on the kefir screensaver<strong>press the volume down button</strong>to get into hekate</li>
-  <li>Go to “<strong>emuMMC</strong>”</li>
-  <li>Click “<strong>Migrate emuMMC</strong>”</li>
-  <li>Select “<strong>Emunand</strong>” -&gt; “<strong>Continue</strong>”</li>
-  <li>After finishing the migration, click “<strong>Change emuMMC</strong>” and on the right side of the screen select “<strong>emuMMC/EF00</strong>”</li>
-  <li>Click “<strong>OK</strong>”
-    <ul>
-      <li>Now, when the STB starts up, it will automatically launch emuMMC.</li>
-      <li>To get into the official firmware, run <strong>hekate -&gt; Launch -&gt; Stock</strong></li>
-    </ul>
-  </li>
-</ol>
+<p>В начале 2021 года вышла Atmosphere 0.17.0, которая уже полностью поддерживала работу на чипованных приставках, так что теперь можно уже и не ждать новых версий SXOS - это просто уже не нужно.</p>
 
 </div></details>
 
-<details class="spoiler"><summary class="spoiler-title">Unstitched prefix with a chip from Team Xecuter (SX Core or SX Lite)</summary><div class="spoiler-body">
-<details class="spoiler"><summary class="spoiler-title">Preparatory work</summary><div class="spoiler-body">
-<p>Until we start the transition, we need to make sure that SysNAND and EmuNAND are running the latest version of the system software. Otherwise, when migrating EmuNAND to Atmosphere, you will not be able to run it.</p>
+<h2 id="переход-из-sx-на-atmosphere">Переход из SX на Atmosphere</h2>
 
-<h4 id="backing-up-saves">Backing up saves</h4>
+<p>Выберите вариант, который вам подходит и следуйте инструкции.</p>
 
-<ol>
-  <li>Back up the save files according to <a href="https://switch.customfw.xyz/backup-saves.html">this instruction</a></li>
-</ol>
-
-<h4 id="upgrading-sysnand-to-the-latest-system-software">Upgrading SysNAND to the latest system software</h4>
-
-<ol>
-  <li>Turn on the console while holding the volume up button to access the SX OS bootloader menu</li>
-  <li>Go to “<strong>Options</strong>” -&gt; “<strong>SX Core</strong>/<strong>SX Lite</strong>” -&gt; “<strong>Genuine boot</strong>” -&gt; “<strong>Continue</strong>” to run SysNAND</li>
-  <li>Wait for the download of the official firmware to finish</li>
-  <li>Go to “<strong>System Preferences</strong>” -&gt; “<strong>System</strong>”, click on “<strong>System Update</strong>”
-    <ul>
-      <li>Wait for the firmware update, then turn off the console</li>
-      <li>If your set-top box already has the latest version of system software, just turn off the console</li>
-      <li>Yes, it is safe and will not result in a ban</li>
-    </ul>
-  </li>
-</ol>
-
-<h4 id="updating-emunand-to-the-latest-system-software">Updating EmuNAND to the latest system software</h4>
-
-<ol>
-  <li>Update EmuNAND to 11.0.1 by <a href="update-to-latest">this instruction</a></li>
-</ol>
-
-</div></details>
-
-<details class="spoiler"><summary class="spoiler-title">Start firmware</summary><div class="spoiler-body">
-<ol>
-  <li>Insert the memory card of the set-top box into the PC</li>
-  <li>Install <span class="tooltip_container">
- <a href="https://github.com/rashevskyv/kefir/releases" target="_blank">kefir</a>
- <span class="tooltip"><i class="fas fa-caret-down"></i>
-     <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
-     </span>
- </span>
-</span> by choosing “<strong>Atmosphere for SX Core/Light</strong>” as an option (<code class="language-plaintext highlighter-rouge">modcip.zip</code> for manual installation)</li>
-  <li>Wait for the installation to complete, then return the memory card to the console</li>
-  <li>Turn on the console
-    <ul>
-      <li>SysNAND should load.</li>
-      <li>If you encounter any errors, see the “<a href="migrate # problems-and-solutions"><strong>Problems and Solutions</strong></a>” section at the bottom of this page</li>
-    </ul>
-  </li>
-</ol>
-
-</div></details>
-
-<details class="spoiler"><summary class="spoiler-title">Transferring EmuNAND from SX OS to Atmosphere</summary><div class="spoiler-body">
-<ol>
-  <li>Turn off your console</li>
-  <li>Turn on the console while holding the volume up button to boot into hekate</li>
-  <li>Go to “<strong>emuMMC</strong>”</li>
-  <li>Click “<strong>Migrate emuMMC</strong>”</li>
-  <li>Select “<strong>Emunand</strong> -&gt; “<strong>Continue</strong>”</li>
-  <li>After finishing the migration, click “<strong>Change emuMMC</strong>” and on the right side of the screen select “<strong>emuMMC/EF00</strong>”</li>
-  <li>Click “<strong>OK</strong>”</li>
-  <li>Go to “<strong>Tools</strong>” -&gt; “<strong>Backup eMMC</strong>” -&gt; “<strong>eMMC BOOT0 &amp; BOOT1</strong>”</li>
-  <li>Press “<strong>Close</strong>”, “<strong>Close</strong>”, go to “<strong>Home</strong>” and press “<strong>Power Off</strong>”, confirm shutdown</li>
-  <li>Insert the memory card of the set-top box into the PC</li>
-  <li>Go to the folder <code class="language-plaintext highlighter-rouge">sd: \ backup \% emmc_id%</code>, where<strong>% emmc_id%</strong>is a unique number for each separate STB.</li>
-  <li>Copy <code class="language-plaintext highlighter-rouge">BOOT0</code> and<code class="language-plaintext highlighter-rouge"> BOO1</code> from this folder to the folder <code class="language-plaintext highlighter-rouge">emuMMC \ ED00 \ eMMC</code> with replacement
-    <ul>
-      <li>Now, when the STB starts up, it will automatically launch emuMMC.</li>
-      <li>To get into the official firmware, run<strong>hekate</strong> -&gt; “<strong>Launch</strong>” -&gt; “<strong>Stock</strong>”</li>
-    </ul>
-  </li>
-</ol>
-
-</div></details>
-
-<details class="spoiler"><summary class="spoiler-title">Creation of EmuNAND via hekate</summary><div class="spoiler-body">
-<p class="notice">If you didn’t have EmuNAND, it is highly recommended to create one. This is done primarily to avoid unpleasant consequences for SysNAND in case of any problems, so do EmuNAND even if you don’t plan to use a license or online!</p>
-
-<ol>
-  <li>Turn off your console</li>
-  <li>Turn on the console while holding the volume up button to boot into hekate</li>
-  <li>Go to “<strong>emuMMC</strong>”</li>
-  <li>Click “<strong>Create emuMMC</strong>” -&gt; “<strong>SD File</strong>”
-    <ul>
-      <li>To create emuMMC you need to have at least 32GB of free space on the card! If you do not have that much, take another card, or temporarily transfer the Nintendo folder to your PC</li>
-    </ul>
-  </li>
-  <li>After finishing emuMMC creation, click “<strong>OK</strong>”
-    <ul>
-      <li>Now, when the STB starts up, it will automatically launch emuMMC.</li>
-      <li>To get into the official firmware, run<strong>hekate</strong> -&gt; “<strong>Launch</strong>” -&gt; “<strong>Stock</strong>”</li>
-    </ul>
-  </li>
-</ol>
-
-</div></details>
-
-<details class="spoiler"><summary class="spoiler-title">Backup firmware and keys</summary><div class="spoiler-body">
-<ol>
-  <li>Turn off your console</li>
-  <li>Insert the memory card of the set-top box into the PC</li>
-  <li>Copy the <code class="language-plaintext highlighter-rouge">emuMMC</code> folder from the root of your memory card to your PC. This is your emunand. It is identical to the backup, so there is no point in creating a backup separately</li>
-  <li>Return the memory card to the console</li>
-  <li>Turn on the console while holding the volume up button to boot into hekate</li>
-  <li>Go to Payloads and select Lockpick_RCM.bin</li>
-  <li>Press the (Power) button, being on the first line in the program for dumping keys</li>
-  <li>Press the (Power) button again to go to the main menu of the program.</li>
-  <li>Use the volume buttons to move the cursor to the Power Off item and press the (Power) button to turn off the set-top box.</li>
-  <li>Insert the memory card of the set-top box into the PC</li>
-  <li>Go to the folder <code class="language-plaintext highlighter-rouge">sd:/switch</code> and copy the files<code class="language-plaintext highlighter-rouge"> prod.keys</code> and <code class="language-plaintext highlighter-rouge">partialaes.keys</code> to the same folder where you copied your backup</li>
-</ol>
-
-<p class="notice">Place the backup in a safe place, preferably several different ones. And into the cloud. And on a USB flash drive. Don’t lose it!</p>
-
-</div></details>
-
-</div></details>
-
-<p>&lt;!– ### Обновление SysNAND до последней версии системного ПО</p>
-
-<ol>
-  <li>Включите консоль, удерживая кнопку повышения громкости, чтобы попасть в меню загрузчика SX OS</li>
-  <li>Перейдите в “<strong>Options</strong>” -&gt; “<strong>SX Core</strong>/<strong>SX Lite</strong>” -&gt; “<strong>Genuine boot</strong>” -&gt; “<strong>Continue</strong>”, чтобы запустить SysNAND</li>
-  <li>Дождитесь окончания загрузки официальной прошивки</li>
-  <li>Перейдите в “<strong>Системные настройки</strong>” -&gt; “<strong>Система</strong>”, нажмите на “<strong>Обновление системы</strong>”
-    <ul>
-      <li>Дождитесь обновления прошивки, затем выключите консоль</li>
-      <li>Если на вашей приставке и так уже последняя версия системного ПО, просто выключите консоль</li>
-      <li>Да, это безопасно и не приведёт к бану</li>
-    </ul>
-  </li>
-</ol>
-
-<h3 id="обновление-emunand-до-последней-версии-системного-по">Обновление EmuNAND до последней версии системного ПО</h3>
-
-<ol>
-  <li>Включите консоль, удерживая кнопку повышения громкости, чтобы попасть в меню загрузчика SX OS</li>
-  <li>Перейдите в “<strong>Options</strong>” -&gt; “<strong>SX Core</strong>/<strong>SX Lite</strong>” -&gt; “<strong>Genuine boot</strong>” -&gt; “<strong>Continue</strong>”, чтобы запустить SysNAND</li>
-  <li>Дождитесь окончания загрузки официальной прошивки</li>
-  <li>Перейдите в “<strong>Системные настройки</strong>” -&gt; “<strong>Система</strong>”, нажмите на “<strong>Обновление системы</strong>”
-    <ul>
-      <li>Дождитесь обновления прошивки, затем выключите консоль</li>
-      <li>Если на вашей приставке и так уже последняя версия системного ПО, просто выключите консоль</li>
-      <li>Да, это безопасно и не приведёт к бану</li>
-    </ul>
-  </li>
-</ol>
-
-<h3 id="подготовительные-работы">Подготовительные работы</h3>
-
+<details class="spoiler"><summary class="spoiler-title">Прошиваемая приставка с уязвимостью Fusée Gelée или прошитая с помощью Caffeine</summary><div class="spoiler-body">
 <ol>
   <li>Вставьте карту памяти приставки в ПК</li>
   <li>Установите <span class="tooltip_container">
@@ -474,73 +294,239 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
          Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
      </span>
  </span>
-</span>, выбрав “<strong>Atmosphere for SX Core/Light</strong>” в качестве опции (<code class="language-plaintext highlighter-rouge">modcip.zip</code>)</li>
+</span>, выбрав “<strong>Atmosphere</strong>” в качестве опции (<code class="language-plaintext highlighter-rouge">atmo.zip</code> для ручной установки)</li>
   <li>Дождитесь окончания установки, затем верните карту памяти в консоль</li>
+  <li>Включите консоль</li>
+  <li>Если у вас был EmuNAND, на заставке кефира <strong>нажмите кнопку понижения громкости</strong>, чтобы попасть в hekate
+    <ol>
+      <li>Перейдите в “<strong>emuMMC</strong>”</li>
+      <li>Нажмите “<strong>Migrate emuMMC</strong>”</li>
+      <li>Выберите “<strong>Emunand</strong>” -&gt; “<strong>Continue</strong>”</li>
+      <li>После окончания миграции, нажмите “<strong>Change emuMMC</strong>” и в правой части экрана выберите “<strong>emuMMC/EF00</strong>”</li>
+      <li>Нажмите “<strong>ОК</strong>”
+        <ul>
+          <li>Теперь при запуске приставки она автоматически будет запускать emuMMC.</li>
+          <li>Чтобы попасть в официальную прошивку, запустите <strong>hekate -&gt; Launch -&gt; Stock</strong></li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+</ol>
+
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Непрошиваемая приставка с чипом от Team Xecuter (SX Core или SX Lite)</summary><div class="spoiler-body">
+<details class="spoiler"><summary class="spoiler-title">Подготовительные работы</summary><div class="spoiler-body">
+<p>Пока мы не начали переход, нужно убедиться, что на SysNAND и EmuNAND работают на последней версии системного ПО. Иначе при переносе EmuNAND в Atmosphere вы не сможете его запустить.</p>
+
+<h4 id="резервное-копирование-сохранений">Резервное копирование сохранений</h4>
+
+<ol>
+  <li>Выполните резервное копирование сохранений по <a href="https://switch.customfw.xyz/backup-saves.html" target="_blank">этой инструкции</a></li>
+</ol>
+
+<h4 id="обновление-sysnand-до-последней-версии-системного-по">Обновление SysNAND до последней версии системного ПО</h4>
+
+<ol>
   <li>Включите консоль, удерживая кнопку повышения громкости, чтобы попасть в меню загрузчика SX OS</li>
-  <li>Перейдите в “<strong>Options</strong>” -&gt; “<strong>NAND</strong>” -&gt; “<strong>Dump NAND</strong>” -&gt; “<strong>Advanced…</strong>”</li>
-  <li>Переведите переключатель “<strong>Dump Raw full NAND</strong>” в положение “<strong>NO</strong>” и нажмите “<strong>Done</strong>”
+  <li>Перейдите в “<strong>Options</strong>” -&gt; “<strong>SX Core</strong> / <strong>SX Lite</strong>” -&gt; “<strong>Genuine boot</strong>” -&gt; “<strong>Continue</strong>”, чтобы запустить SysNAND</li>
+  <li>Дождитесь окончания загрузки официальной прошивки</li>
+  <li>Перейдите в “<strong>Системные настройки</strong>” -&gt; “<strong>Система</strong>”, нажмите на “<strong>Обновление системы</strong>”
     <ul>
-      <li>Таким образом YES будет стоять только под пунктами “<strong>Dump Boot0</strong>” и “<strong>Dump Boot1</strong>”</li>
+      <li>Дождитесь обновления прошивки, затем выключите консоль</li>
+      <li>Если на вашей приставке и так уже последняя версия системного ПО, просто выключите консоль</li>
+      <li>Да, это безопасно и не приведёт к бану</li>
     </ul>
   </li>
-  <li>Нажмите “<strong>Continue</strong>”, чтобы начать дампить Boot1 и Boot0 из вашей оригинальной прошивки</li>
-  <li>Нажмите “<strong>SX Core</strong>/<strong>SX Lite</strong>”, затем выберите<strong>Cleanup</strong> -&gt; <strong>Continue</strong></li>
 </ol>
 
-<h3 id="перенос-emunand-из-sx-os-в-atmosphere">Перенос EmuNAND из SX OS в Atmosphere</h3>
+<h4 id="обновление-emunand-до-последней-версии-системного-по">Обновление EmuNAND до последней версии системного ПО</h4>
 
 <ol>
-  <li>Нажмите “<strong>Payloads</strong>”, выберите <code class="language-plaintext highlighter-rouge">payload.bin</code> и нажмите<strong>Launch</strong>- -&gt;</li>
+  <li>Обновите EmuNAND до 11.0.1 по <a href="update-to-latest" target="_blank">этой инструкции</a></li>
 </ol>
 
-<h2 id="problems-and-solutions">Problems and solutions</h2>
+</div></details>
 
-<details class="spoiler"><summary class="spoiler-title">Black screen when starting SysNAND</summary><div class="spoiler-body">
+<details class="spoiler"><summary class="spoiler-title">Запуск прошивки</summary><div class="spoiler-body">
 <ol>
-  <li>Turn off the set-top box by holding the power button for 30 seconds</li>
-  <li>Insert the memory card of the set-top box into the PC</li>
-  <li>Download <a href="https://t.me/SX_OS/178">SX_OS 3.1.0</a></li>
-  <li>Place <code class="language-plaintext highlighter-rouge">boot.dat</code> from the archive<code class="language-plaintext highlighter-rouge"> SX_OS_v3.1.0_BETA_by_ [Team-Xecuter] .zip</code> into the root of the memory card with replacement</li>
-  <li>Turn on the console while holding the volume up button to access the SX OS bootloader menu</li>
-  <li>Go to “<strong>Options</strong>” -&gt; “<strong>SX Core</strong>/<strong>SX Lite</strong>”, then select<strong>Cleanup</strong> -&gt; <strong>Continue</strong></li>
-  <li>Press “<strong>Power Off</strong>” to turn off the console</li>
-  <li>Insert the memory card of the set-top box into the PC</li>
-  <li>Install <span class="tooltip_container">
+  <li>Вставьте карту памяти приставки в ПК</li>
+  <li>Установите <span class="tooltip_container">
  <a href="https://github.com/rashevskyv/kefir/releases" target="_blank">kefir</a>
  <span class="tooltip"><i class="fas fa-caret-down"></i>
      <span class="bottom">
          Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
      </span>
  </span>
-</span> by choosing “<strong>Atmosphere for SX Core/Light</strong>” as an option (<code class="language-plaintext highlighter-rouge">modcip.zip</code>)</li>
-  <li>Wait for the installation to complete, then return the memory card to the console</li>
-  <li>Turn on the console
+</span>, выбрав “<strong>Atmosphere for SX Core / Light</strong>” в качестве опции (<code class="language-plaintext highlighter-rouge">modcip.zip</code> для ручной установки)</li>
+  <li>Дождитесь окончания установки, затем верните карту памяти в консоль</li>
+  <li>Включите консоль
     <ul>
-      <li>SysNAND should load.</li>
+      <li>Должен загрузиться SysNAND.</li>
+      <li>Если возникают какие-либо ошибки, обратитесь к разделу “<a href="migrate#проблемы-и-их-решения"><strong>Проблемы и их решения</strong></a>” внизу этой страницы</li>
     </ul>
   </li>
 </ol>
 
 </div></details>
 
-<details class="spoiler"><summary class="spoiler-title">Black screen when starting EmuNAND/Errors when starting EmuNAND related to boot</summary><div class="spoiler-body">
-<p class="notice">Try starting SysNAND first and only follow the instructions below if SysNAND starts! If not, fix this problem first and then go back to this tutorial!</p>
-
+<details class="spoiler"><summary class="spoiler-title">Перенос EmuNAND с SX OS в Atmosphere</summary><div class="spoiler-body">
 <ol>
-  <li>Turn on the console</li>
-  <li>On the kefir screensaver<strong>press the volume down button</strong>to get into hekate</li>
-  <li>Go to “<strong>Tools</strong>” -&gt; “<strong>Backup eMMC</strong>” -&gt; “<strong>eMMC BOOT0 &amp; BOOT1</strong>”</li>
-  <li>Press “<strong>Close</strong>”, “<strong>Close</strong>”, go to “<strong>Home</strong>” and press “<strong>Power Off</strong>”, confirm shutdown</li>
-  <li>Insert the memory card of the set-top box into the PC</li>
-  <li>Go to the folder <code class="language-plaintext highlighter-rouge">sd: \ backup \% emmc_id%</code>, where <strong>%emmc_id%</strong> is a unique number for each separate STB.</li>
-  <li>Copy <code class="language-plaintext highlighter-rouge">BOOT0</code> and <code class="language-plaintext highlighter-rouge">BOO1</code> from this folder to the folder <code class="language-plaintext highlighter-rouge">emuMMC \ ED00 \ eMMC</code> with replacement</li>
-  <li>Try running emunand. If it doesn’t work, you will have to create a new one.</li>
+  <li>Выключите консоль</li>
+  <li>Включите консоль, удерживая кнопку повышения громкости, чтобы загрузиться в hekate</li>
+  <li>Перейдите в “<strong>emuMMC</strong>”</li>
+  <li>Нажмите “<strong>Migrate emuMMC</strong>”</li>
+  <li>Выберите “<strong>Emunand</strong> -&gt; “<strong>Continue</strong>”</li>
+  <li>После окончания миграции, нажмите “<strong>Change emuMMC</strong>” и в правой части экрана выберите “<strong>emuMMC/EF00</strong>”</li>
+  <li>Нажмите “<strong>ОК</strong>”</li>
+  <li>Перейдите в “<strong>Tools</strong>”	 -&gt; “<strong>Backup eMMC</strong>” -&gt; “<strong>eMMC BOOT0 &amp; BOOT1</strong>”</li>
+  <li>Нажмите “<strong>Close</strong>”, “<strong>Close</strong>”, перейдите в “<strong>Home</strong>” и нажмите “<strong>Power Off</strong>”, подтвердите выключение</li>
+  <li>Вставьте карту памяти приставки в ПК</li>
+  <li>Перейдите в папку <code class="language-plaintext highlighter-rouge">sd:\backup\%emmc_id%</code>, где <strong>%emmc_id%</strong> - уникальный номер для каждой отдельной приставки.</li>
+  <li>Скопируйте <code class="language-plaintext highlighter-rouge">BOOT0</code> и <code class="language-plaintext highlighter-rouge">BOO1</code> из этой папки в папку <code class="language-plaintext highlighter-rouge">emuMMC\ED00\eMMC</code> с заменой
+    <ul>
+      <li>Теперь при запуске приставки она автоматически будет запускать emuMMC.</li>
+      <li>Чтобы попасть в официальную прошивку, запустите <strong>hekate</strong> -&gt; “<strong>Launch</strong>” -&gt; “<strong>Stock</strong>”</li>
+    </ul>
+  </li>
 </ol>
 
 </div></details>
 
-<details class="spoiler"><summary class="spoiler-title">Error "Pkg1 decryption failed! Is BEK Missing?"</summary><div class="spoiler-body">
-<p>Update <span class="tooltip_container">
+<details class="spoiler"><summary class="spoiler-title">Создание EmuNAND через hekate</summary><div class="spoiler-body">
+<p class="notice--warning">Если у вас не было EmuNAND, крайне рекомендуется его создать. Это делается в первую очередь для того, чтобы избежать неприятных последствий для SysNAND в случае каких-либо косяков, так что сделайте EmuNAND даже если вы не планируете пользоваться лицензией или онлайном!</p>
+
+<ol>
+  <li>Выключите консоль</li>
+  <li>Включите консоль, удерживая кнопку повышения громкости, чтобы загрузиться в hekate</li>
+  <li>Перейдите в “<strong>emuMMC</strong>”</li>
+  <li>Нажмите “<strong>Create emuMMC</strong>” -&gt; “<strong>SD File</strong>”
+    <ul>
+      <li>Для создания emuMMC нужно иметь не менее 32Гб свободного места на карте! Если у вас нет столько, возьмите другую карту, либо временно перенесите папку Nintendo на ваш ПК</li>
+    </ul>
+  </li>
+  <li>После окончания создания emuMMC, нажмите “<strong>ОК</strong>”
+    <ul>
+      <li>Теперь при запуске приставки она автоматически будет запускать emuMMC.</li>
+      <li>Чтобы попасть в официальную прошивку, запустите <strong>hekate</strong> -&gt; “<strong>Launch</strong>” -&gt; “<strong>Stock</strong>”</li>
+    </ul>
+  </li>
+</ol>
+
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Бекап прошивки и ключей</summary><div class="spoiler-body">
+<ol>
+  <li>Выключите консоль</li>
+  <li>Вставьте карту памяти приставки в ПК</li>
+  <li>Скопируйте папку <code class="language-plaintext highlighter-rouge">emuMMC</code> из корня вашей карты памяти на ПК. Это ваш эмунанд. Он идентичен бекапу, поэтому нет никакого смысла создавать бекап отдельно</li>
+  <li>Верните карту памяти в консоль</li>
+  <li>Включите консоль, удерживая кнопку повышения громкости, чтобы загрузиться в hekate</li>
+  <li>Перейдите в Payloads и выберите Lockpick_RCM.bin</li>
+  <li>Нажмите кнопку (Power), находясь на первой строчке в программе для дампа ключей</li>
+  <li>Нажмите кнопку (Power) ещё раз для перехода в главное меню программы</li>
+  <li>Кнопками громкости переместите курсор на пункт Power Off и нажмите кнопку (Power), чтобы выключить приставку</li>
+  <li>Вставьте карту памяти приставки в ПК</li>
+  <li>Перейдите в папку <code class="language-plaintext highlighter-rouge">sd:/switch</code> и скопируйте файлы <code class="language-plaintext highlighter-rouge">prod.keys</code> и <code class="language-plaintext highlighter-rouge">partialaes.keys</code> в ту же папку, в которую вы скопировали ваш бекап</li>
+</ol>
+
+<p class="notice--danger">Поместите бекап в надежное место, желательно в несколько разных. И в облако. И на флешку какую-либо. Не потеряйте его!</p>
+
+</div></details>
+
+</div></details>
+
+<!-- ### Обновление SysNAND до последней версии системного ПО 
+
+1. Включите консоль, удерживая кнопку повышения громкости, чтобы попасть в меню загрузчика SX OS
+1. Перейдите в "**Options**" -> "**SX Core** / **SX Lite**" -> "**Genuine boot**" -> "**Continue**", чтобы запустить SysNAND
+1. Дождитесь окончания загрузки официальной прошивки 
+1. Перейдите в "**Системные настройки**" -> "**Система**", нажмите на "**Обновление системы**"
+	* Дождитесь обновления прошивки, затем выключите консоль
+	* Если на вашей приставке и так уже последняя версия системного ПО, просто выключите консоль 
+	* Да, это безопасно и не приведёт к бану
+
+### Обновление EmuNAND до последней версии системного ПО 
+
+1. Включите консоль, удерживая кнопку повышения громкости, чтобы попасть в меню загрузчика SX OS
+1. Перейдите в "**Options**" -> "**SX Core** / **SX Lite**" -> "**Genuine boot**" -> "**Continue**", чтобы запустить SysNAND
+1. Дождитесь окончания загрузки официальной прошивки 
+1. Перейдите в "**Системные настройки**" -> "**Система**", нажмите на "**Обновление системы**"
+	* Дождитесь обновления прошивки, затем выключите консоль
+	* Если на вашей приставке и так уже последняя версия системного ПО, просто выключите консоль 
+	* Да, это безопасно и не приведёт к бану
+
+### Подготовительные работы
+
+1. Вставьте карту памяти приставки в ПК 
+1. Установите <span class="tooltip_container">
+	[kefir](https://github.com/rashevskyv/kefir/releases){:target="_blank"}
+	<span class="tooltip"><i class="fas fa-caret-down"></i>
+		<span class="bottom">
+			Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+		</span>
+	</span>
+</span>, выбрав "**Atmosphere for SX Core / Light**" в качестве опции (`modcip.zip`)
+1. Дождитесь окончания установки, затем верните карту памяти в консоль
+1. Включите консоль, удерживая кнопку повышения громкости, чтобы попасть в меню загрузчика SX OS
+1. Перейдите в "**Options**" -> "**NAND**" -> "**Dump NAND**" -> "**Advanced...**"
+1. Переведите переключатель "**Dump Raw full NAND**" в положение "**NO**" и нажмите "**Done**"
+	* Таким образом YES будет стоять только под пунктами "**Dump Boot0**" и "**Dump Boot1**"
+1. Нажмите "**Continue**", чтобы начать дампить Boot1 и Boot0 из вашей оригинальной прошивки
+1. Нажмите "**SX Core** / **SX Lite**", затем выберите **Cleanup** -> **Continue**
+
+### Перенос EmuNAND из SX OS в Atmosphere
+
+1. Нажмите "**Payloads**", выберите `payload.bin` и нажмите **Launch** -->
+
+<h2 id="проблемы-и-их-решения">Проблемы и их решения</h2>
+
+<details class="spoiler"><summary class="spoiler-title">Черный экран при запуске SysNAND</summary><div class="spoiler-body">
+<ol>
+  <li>Выключите приставку, удерживая 30 секунд кнопку питания</li>
+  <li>Вставьте карту памяти приставки в ПК</li>
+  <li>Скачайте <a href="https://t.me/SX_OS/178" target="_blank">SX_OS 3.1.0</a></li>
+  <li>Поместите <code class="language-plaintext highlighter-rouge">boot.dat</code> из архива <code class="language-plaintext highlighter-rouge">SX_OS_v3.1.0_BETA_by_[Team-Xecuter].zip</code> в корень карты памяти с заменой</li>
+  <li>Включите консоль, удерживая кнопку повышения громкости, чтобы попасть в меню загрузчика SX OS</li>
+  <li>Перейдите в “<strong>Options</strong>” -&gt; “<strong>SX Core</strong> / <strong>SX Lite</strong>”, затем выберите <strong>Cleanup</strong> -&gt; <strong>Continue</strong></li>
+  <li>Нажмите “<strong>Power Off</strong>”, чтобы выключить консоль</li>
+  <li>Вставьте карту памяти приставки в ПК</li>
+  <li>Установите <span class="tooltip_container">
+ <a href="https://github.com/rashevskyv/kefir/releases" target="_blank">kefir</a>
+ <span class="tooltip"><i class="fas fa-caret-down"></i>
+     <span class="bottom">
+         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+     </span>
+ </span>
+</span>, выбрав “<strong>Atmosphere for SX Core / Light</strong>” в качестве опции (<code class="language-plaintext highlighter-rouge">modcip.zip</code>)</li>
+  <li>Дождитесь окончания установки, затем верните карту памяти в консоль</li>
+  <li>Включите консоль
+    <ul>
+      <li>Должен загрузиться SysNAND.</li>
+    </ul>
+  </li>
+</ol>
+
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Черный экран при запуске EmuNAND / Ошибки при запуске EmuNAND, связанные с boot</summary><div class="spoiler-body">
+<p class="notice--warning">Сперва попробуйте запустить SysNAND и выполняйте нижеследующую инструкцию только если SysNAND запускается! Если нет, сперва решите эту проблему, а затем вернитесь к выполнению этой инструкции!</p>
+
+<ol>
+  <li>Включите консоль</li>
+  <li>На заставке кефира <strong>нажмите кнопку понижения громкости</strong>, чтобы попасть в hekate</li>
+  <li>Перейдите в “<strong>Tools</strong>”	 -&gt; “<strong>Backup eMMC</strong>” -&gt; “<strong>eMMC BOOT0 &amp; BOOT1</strong>”</li>
+  <li>Нажмите “<strong>Close</strong>”, “<strong>Close</strong>”, перейдите в “<strong>Home</strong>” и нажмите “<strong>Power Off</strong>”, подтвердите выключение</li>
+  <li>Вставьте карту памяти приставки в ПК</li>
+  <li>Перейдите в папку <code class="language-plaintext highlighter-rouge">sd:\backup\%emmc_id%</code>, где <strong>%emmc_id%</strong> - уникальный номер для каждой отдельной приставки.</li>
+  <li>Скопируйте <code class="language-plaintext highlighter-rouge">BOOT0</code> и <code class="language-plaintext highlighter-rouge">BOO1</code> из этой папки в папку <code class="language-plaintext highlighter-rouge">emuMMC\ED00\eMMC</code> с заменой</li>
+  <li>Пробуйте запустить эмунанд. Если не вышло, вам придется создавать новый.</li>
+</ol>
+
+</div></details>
+
+<details class="spoiler"><summary class="spoiler-title">Ошибка "Pkg1 decryption failed! Is BEK Missing?"</summary><div class="spoiler-body">
+<p>Обновите <span class="tooltip_container">
 	<a href="https://github.com/rashevskyv/kefir/releases" target="_blank">kefir</a>
 	<span class="tooltip"><i class="fas fa-caret-down"></i>
 		<span class="bottom">
@@ -551,9 +537,9 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 </div></details>
 
-<details class="spoiler"><summary class="spoiler-title">I have another error</summary><div class="spoiler-body">
-<p>Tell us about it in the <a href="http://vk.customfw.xyz">group</a>.<strong>Be sure to</strong> attach a screenshot of the error, the version of your set-top box (if you don’t know which - the serial), how the firmware starts (chip (if yes, which one), dongle (if yes, which one), somehow), version system software, the presence of EmuNAND, what exactly gives the error - EmuNAND or SysNAND, the version of kefir, after which an error occurs.
-Missing <strong>any</strong> of these points will result in your post being deleted or ignored.</p>
+<details class="spoiler"><summary class="spoiler-title">У меня другая ошибка</summary><div class="spoiler-body">
+<p>Расскажите об этом в <a href="http://vk.customfw.xyz">группе</a>. <strong>Обязательно</strong> приложите скриншот ошибки, версию своей приставки (если не знаете какая - серийник), как запускается прошивка (чип (если да, то какой), донгл (если да, то какой), ещё как-то), версию системного ПО, наличие EmuNAND, что именно выдает ошибку - EmuNAND или SysNAND, версию кефира, после чего возникает ошибка. 
+Отсутствие <strong>любого</strong> из этих пунктов приведет к тому, что ваш пост удалят или проигнорируют.</p>
 
 </div></details>
 

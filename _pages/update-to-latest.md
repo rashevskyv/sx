@@ -5,25 +5,14 @@ author_profile: true
 ---
 {% include toc title="Разделы" %}
 
-{% spoiler Видеоинструкция %}
-
-{% include youtube.html id="f3I4DmYhVPw" %}
-{: .text-center}
-{: .notice--info}
-
-{% endspoiler %}
-
-**ВНИМАНИЕ!!!** В данный момент SX OS не поддерживает последнюю версию системного ПО - 11.0.1! Это значит, что если вы еще не прошили свою консоль и версия вашего системного ПО 11.0.1, то вы не сможете пользоваться SX OS! Если вы обновите ваш EmuNAND до 11.0.1, то вы не сможете его использовать! Поэтому внимательно следите за тем, на какую версию системного ПО вы обновляете свой эмунанд! Качайте прошивку только по ссылкам из этого руководства!
-{: .notice--warning}
-
 ## Что понадобится
 
-* Свежая версия {% include abbr/kefir_addr.txt %}
+* [Kefir 4](https://github.com/rashevskyv/kefir/releases/tag/491){:target="_blank"}
 * Прошивка {% include /vars/update_version.txt %} (скачайте по любой из ссылок):
-	* [magnet](magnet:?xt=urn:btih:4421A5C290B43EBE8C28C1EFB5A1229275C2177E&dn=11.0.0.zip&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce){:target="_blank"}
-	* [ЯД](https://yadi.sk/d/PkQT1KqqIDV2ZQ){:target="_blank"}
-	* [GD](https://drive.google.com/file/d/12JZ2fHwWfBzhIEhNYE0zEpp_uDXVRuLf/view?usp=sharing){:target="_blank"}
-	* [MEGA](https://mega.nz/file/IDJTTSSD#3rNYrs5DmQe8BS0JwPZDEqwx98BuXwoBaQ73WDZiK2w){:target="_blank"}
+	* [magnet](magnet:?xt=urn:btih:32E00202048CE3A0A77F63F0DBB6C239C15471D2&dn=11.0.1.zip&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce){:target="_blank"}
+	* [ЯД](https://yadi.sk/d/Y2bbzSSb1MJxPA){:target="_blank"}
+	* [GD](https://drive.google.com/file/d/1oFx4OMiZud26vC_w9fVwXQ_068jR3K43){:target="_blank"}
+	* [MEGA](https://mega.nz/file/hSAz3Aab#MWQSedBrhcYkt5XsXRvg1AuWENUC2-7b1UREB3HxJcQ){:target="_blank"}
 
 ## Инструкция
 
@@ -79,10 +68,8 @@ author_profile: true
 	![]({{ base_path }}/images/screenshots/choi/start.png)
 	{: .text-center}
 
-	* При установки прошивки с такой же версией, как исходная (например, у вас стоит {% include /vars/update_version.txt %}, а вы пытаетесь установить {% include /vars/update_version.txt %} (exFAT)) может возникать ошибка. В таком случае, вам придётся установить прошивку с версией ниже (например, если у вас сейчас стоит 10.0.2, поставьте 9.2.0), а уже потом повышать её. 
-	* Если вы попали в такую ситуацию, обязательно сделайте бекап перед обновлением!
 1. После окончания установки нажмите "**Reboot**", "**Reboot now**", чтобы перезагрузить приставку. 
-	* Если приставка загрузилась и в Системные настройки -> Система отображается обновленная версия системного ПО, то вы можете удалить ранее сделанный бекап EmuNAND с ПК, а так же папку с прошивкой с вашей карты памяти
+	* Если приставка загрузилась и в **Системные настройки** -> **Система** отображается обновленная версия системного ПО, то вы можете удалить ранее сделанный бекап EmuNAND с ПК, а так же папку с прошивкой с вашей карты памяти
 
 ## Важно знать
 

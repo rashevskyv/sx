@@ -42,7 +42,7 @@ permalink: sx_setup
 
 ### Установка kefir на карту памяти 
 
-1. Скачайте `sxchip.zip` из [репозитория кефира](https://github.com/rashevskyv/switch/releases/latest){:target="_blank"} и распакуйте архив в корень вашей карты памяти
+1. Скачайте `sxchip.zip` из [репозитория кефира](https://github.com/rashevskyv/kefir/releases/latest){:target="_blank"} и распакуйте архив в корень вашей карты памяти
 
 	![](/images/screens/sx_folder.png)
 	{: .text-center}

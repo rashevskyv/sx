@@ -1,6 +1,6 @@
 ---
 title: "Переход с SXOS на Atmosphere"
-permalink: migrate
+permalink: migrate_eng
 ---
 
 {% spoiler Зачем переходить на Atmosphere? %}

@@ -433,66 +433,6 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 </div></details>
 
-<p>&lt;!– ### Обновление SysNAND до последней версии системного ПО</p>
-
-<ol>
-  <li>Включите консоль, удерживая кнопку повышения громкости, чтобы попасть в меню загрузчика SX OS</li>
-  <li>Перейдите в “<strong>Options</strong>” -&gt; “<strong>SX Core</strong>/<strong>SX Lite</strong>” -&gt; “<strong>Genuine boot</strong>” -&gt; “<strong>Continue</strong>”, чтобы запустить SysNAND</li>
-  <li>Дождитесь окончания загрузки официальной прошивки</li>
-  <li>Перейдите в “<strong>Системные настройки</strong>” -&gt; “<strong>Система</strong>”, нажмите на “<strong>Обновление системы</strong>”
-    <ul>
-      <li>Дождитесь обновления прошивки, затем выключите консоль</li>
-      <li>Если на вашей приставке и так уже последняя версия системного ПО, просто выключите консоль</li>
-      <li>Да, это безопасно и не приведёт к бану</li>
-    </ul>
-  </li>
-</ol>
-
-<h3 id="обновление-emunand-до-последней-версии-системного-по">Обновление EmuNAND до последней версии системного ПО</h3>
-
-<ol>
-  <li>Включите консоль, удерживая кнопку повышения громкости, чтобы попасть в меню загрузчика SX OS</li>
-  <li>Перейдите в “<strong>Options</strong>” -&gt; “<strong>SX Core</strong>/<strong>SX Lite</strong>” -&gt; “<strong>Genuine boot</strong>” -&gt; “<strong>Continue</strong>”, чтобы запустить SysNAND</li>
-  <li>Дождитесь окончания загрузки официальной прошивки</li>
-  <li>Перейдите в “<strong>Системные настройки</strong>” -&gt; “<strong>Система</strong>”, нажмите на “<strong>Обновление системы</strong>”
-    <ul>
-      <li>Дождитесь обновления прошивки, затем выключите консоль</li>
-      <li>Если на вашей приставке и так уже последняя версия системного ПО, просто выключите консоль</li>
-      <li>Да, это безопасно и не приведёт к бану</li>
-    </ul>
-  </li>
-</ol>
-
-<h3 id="подготовительные-работы">Подготовительные работы</h3>
-
-<ol>
-  <li>Вставьте карту памяти приставки в ПК</li>
-  <li>Установите <span class="tooltip_container">
- <a href="https://github.com/rashevskyv/kefir/releases" target="_blank">kefir</a>
- <span class="tooltip"><i class="fas fa-caret-down"></i>
-     <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
-     </span>
- </span>
-</span>, выбрав “<strong>Atmosphere for SX Core/Light</strong>” в качестве опции (<code class="language-plaintext highlighter-rouge">modcip.zip</code>)</li>
-  <li>Дождитесь окончания установки, затем верните карту памяти в консоль</li>
-  <li>Включите консоль, удерживая кнопку повышения громкости, чтобы попасть в меню загрузчика SX OS</li>
-  <li>Перейдите в “<strong>Options</strong>” -&gt; “<strong>NAND</strong>” -&gt; “<strong>Dump NAND</strong>” -&gt; “<strong>Advanced…</strong>”</li>
-  <li>Переведите переключатель “<strong>Dump Raw full NAND</strong>” в положение “<strong>NO</strong>” и нажмите “<strong>Done</strong>”
-    <ul>
-      <li>Таким образом YES будет стоять только под пунктами “<strong>Dump Boot0</strong>” и “<strong>Dump Boot1</strong>”</li>
-    </ul>
-  </li>
-  <li>Нажмите “<strong>Continue</strong>”, чтобы начать дампить Boot1 и Boot0 из вашей оригинальной прошивки</li>
-  <li>Нажмите “<strong>SX Core</strong>/<strong>SX Lite</strong>”, затем выберите<strong>Cleanup</strong> -&gt; <strong>Continue</strong></li>
-</ol>
-
-<h3 id="перенос-emunand-из-sx-os-в-atmosphere">Перенос EmuNAND из SX OS в Atmosphere</h3>
-
-<ol>
-  <li>Нажмите “<strong>Payloads</strong>”, выберите <code class="language-plaintext highlighter-rouge">payload.bin</code> и нажмите<strong>Launch</strong>- -&gt;</li>
-</ol>
-
 <h2 id="problems-and-solutions">Problems and solutions</h2>
 
 <details class="spoiler"><summary class="spoiler-title">Black screen when starting SysNAND</summary><div class="spoiler-body">

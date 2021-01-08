@@ -1,9 +1,9 @@
 ---
-title: "Переход с SXOS на Atmosphere"
+title: "Moving from SX to Atmosphere"
 permalink: migrate_eng
 ---
 
-{% spoiler Зачем переходить на Atmosphere? %}
+{% spoiler Why switch to Atmosphere? %}
 
 In October 2020 [two Xecuter Team leaders were arrested](https://www.theverge.com/2020/10/2/21499297/team-xecuter-selling-nintendo-hacks-arrested-charged-fraud){: target = "_ blank"} - a campaign engaged in the development and support of SXOS, as well as the production of chips for modifying set-top boxes with a closed vulnerability.
 

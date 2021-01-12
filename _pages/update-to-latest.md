@@ -5,6 +5,9 @@ author_profile: true
 ---
 {% include toc title="Разделы" %}
 
+Эта страница предназначена только для обновления SX OS! Если вы прешли сюда обновлять Atmosphere, то [делайте это по соответствующему гайду](https://switch.customfw.xyz/update-to-latest)
+{: .notice--warning}
+
 ## Что понадобится
 
 * [Kefir 4](https://github.com/rashevskyv/kefir/releases/tag/491){:target="_blank"}

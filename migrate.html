@@ -379,7 +379,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <li>Выберите “<strong>Emunand</strong> -&gt; “<strong>Continue</strong>”</li>
   <li>После окончания миграции, нажмите “<strong>Change emuMMC</strong>” и в правой части экрана выберите “<strong>emuMMC/EF00</strong>”</li>
   <li>Нажмите “<strong>ОК</strong>”</li>
-  <li>Перейдите в “<strong>Tools</strong>”	 -&gt; “<strong>Backup eMMC</strong>” -&gt; “<strong>eMMC BOOT0 &amp; BOOT1</strong>”</li>
+  <li>Перейдите в “<strong>Tools</strong>” -&gt; “<strong>Backup eMMC</strong>” -&gt; “<strong>eMMC BOOT0 &amp; BOOT1</strong>”</li>
   <li>Нажмите “<strong>Close</strong>”, “<strong>Close</strong>”, перейдите в “<strong>Home</strong>” и нажмите “<strong>Power Off</strong>”, подтвердите выключение</li>
   <li>Вставьте карту памяти приставки в ПК</li>
   <li>Перейдите в папку <code class="language-plaintext highlighter-rouge">sd:\backup\%emmc_id%</code>, где <strong>%emmc_id%</strong> - уникальный номер для каждой отдельной приставки.</li>
@@ -488,24 +488,18 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   <li>Скачайте <a href="https://t.me/SX_OS/178" target="_blank">SX_OS 3.1.0</a></li>
   <li>Поместите <code class="language-plaintext highlighter-rouge">boot.dat</code> из архива <code class="language-plaintext highlighter-rouge">SX_OS_v3.1.0_BETA_by_[Team-Xecuter].zip</code> в корень карты памяти с заменой</li>
   <li>Включите консоль, удерживая кнопку повышения громкости, чтобы попасть в меню загрузчика SX OS</li>
-  <li>Перейдите в “<strong>Options</strong>” -&gt; “<strong>SX Core</strong> / <strong>SX Lite</strong>”, затем выберите <strong>Cleanup</strong> -&gt; <strong>Continue</strong></li>
-  <li>Нажмите “<strong>Power Off</strong>”, чтобы выключить консоль</li>
-  <li>Вставьте карту памяти приставки в ПК</li>
-  <li>Установите <span class="tooltip_container">
- <a href="https://github.com/rashevskyv/kefir/releases/tag/491" target="_blank">kefir</a>
- <span class="tooltip"><i class="fas fa-caret-down"></i>
-     <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
-     </span>
- </span>
-</span>, выбрав “<strong>Atmosphere for SX Core / Light</strong>” в качестве опции (<code class="language-plaintext highlighter-rouge">modcip.zip</code>)</li>
-  <li>Дождитесь окончания установки, затем верните карту памяти в консоль</li>
-  <li>Включите консоль
-    <ul>
-      <li>Должен загрузиться SysNAND.</li>
-    </ul>
-  </li>
+  <li>Перейдите в “<strong>Options</strong>” -&gt; “<strong>SX Core</strong> / <strong>SX Lite</strong>”, затем выберите “<strong>Cleanup</strong>” -&gt; “<strong>Continue</strong>”</li>
+  <li>Перейдите в “<strong>Payloads</strong>” -&gt; <code class="language-plaintext highlighter-rouge">payload.bin</code>”`, затем выберите “<strong>Launch</strong>”. Должен загрузиться SysNAND.</li>
 </ol>
+
+<p class="notice--info">Теперь можно установите <span class="tooltip_container">
+	<a href="https://github.com/rashevskyv/kefir/releases/tag/491" target="_blank">kefir</a>
+	<span class="tooltip"><i class="fas fa-caret-down"></i>
+		<span class="bottom">
+			Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+		</span>
+	</span>
+</span> ещё раз, выбрав “<strong>Atmosphere for SX Core / Light</strong>” в качестве опции (<code class="language-plaintext highlighter-rouge">modcip.zip</code> при обновлении вручную). Последующие запуски kefir будет запускаться автоматически сразу при включении приставки.</p>
 
 </div></details>
 

@@ -276,7 +276,6 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
       <li><a href="#часть-iii---обновление-прошивки" id="markdown-toc-часть-iii---обновление-прошивки">Часть III - Обновление прошивки</a></li>
     </ul>
   </li>
-  <li><a href="#важно-знать" id="markdown-toc-важно-знать">Важно знать</a></li>
 </ul>
 
   </nav>
@@ -289,6 +288,8 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 <hr />
 
 <p class="notice--warning">Эта страница предназначена только для обновления SX OS! Если вы прешли сюда обновлять Atmosphere, то <a href="https://switch.customfw.xyz/update-to-latest">делайте это по соответствующему гайду</a></p>
+
+<p class="notice--danger">Никогда не обновляйте SysNAND этим методом! Он предназначен <strong>только</strong> для использования EmuNAND! SysNAND обновляется <strong>только</strong> стандартным способом, через настройки! Обновивши SysNAND через ChoiDujourNX на Mariko, вы гарантированно получите брик при попытке зайти в SysNAND!</p>
 
 <h2 id="что-понадобится">Что понадобится</h2>
 
@@ -377,19 +378,9 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
     <p class="text-center"><img src="/images/screenshots/choi/start.png" alt="" /></p>
   </li>
-  <li>После окончания установки нажмите “<strong>Reboot</strong>”, “<strong>Reboot now</strong>”, чтобы перезагрузить приставку.
-    <ul>
-      <li>Если приставка загрузилась и в <strong>Системные настройки</strong> -&gt; <strong>Система</strong> отображается обновленная версия системного ПО, то вы можете удалить ранее сделанный бекап EmuNAND с ПК, а так же папку с прошивкой с вашей карты памяти</li>
-    </ul>
-  </li>
+  <li>После окончания установки нажмите “<strong>Reboot</strong>”, “<strong>Shutdown</strong>”, чтобы перезагрузить приставку.</li>
+  <li>Продолжайте выполнять инструкцию по миграции</li>
 </ol>
-
-<h2 id="важно-знать">Важно знать</h2>
-
-<ul>
-  <li>Если после прошивки вам предложат обновить контроллеры - обновляйте</li>
-  <li>Если после обновления у вас чёрный экран после логотипа Nintendo, удалите с карты памяти папку <code class="language-plaintext highlighter-rouge">sxos/emunand</code> и скиньте на карту копию EmuNAND, что вы делали ранее.</li>
-</ul>
 
 <hr />
 

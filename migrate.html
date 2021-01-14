@@ -288,7 +288,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 <ol>
   <li>Вставьте карту памяти приставки в ПК</li>
   <li>Установите <span class="tooltip_container">
- <a href="https://github.com/rashevskyv/kefir/releases/tag/491" target="_blank">kefir</a>
+ <a href="https://github.com/rashevskyv/kefir/releases/latest" target="_blank">kefir</a>
  <span class="tooltip"><i class="fas fa-caret-down"></i>
      <span class="bottom">
          Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
@@ -352,7 +352,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 <ol>
   <li>Вставьте карту памяти приставки в ПК</li>
   <li>Установите <span class="tooltip_container">
- <a href="https://github.com/rashevskyv/kefir/releases/tag/491" target="_blank">kefir</a>
+ <a href="https://github.com/rashevskyv/kefir/releases/latest" target="_blank">kefir</a>
  <span class="tooltip"><i class="fas fa-caret-down"></i>
      <span class="bottom">
          Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
@@ -436,57 +436,14 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 </div></details>
 
-<!-- ### Обновление SysNAND до последней версии системного ПО 
-
-1. Включите консоль, удерживая кнопку повышения громкости, чтобы попасть в меню загрузчика SX OS
-1. Перейдите в "**Options**" -> "**SX Core** / **SX Lite**" -> "**Genuine boot**" -> "**Continue**", чтобы запустить SysNAND
-1. Дождитесь окончания загрузки официальной прошивки 
-1. Перейдите в "**Системные настройки**" -> "**Система**", нажмите на "**Обновление системы**"
-	* Дождитесь обновления прошивки, затем выключите консоль
-	* Если на вашей приставке и так уже последняя версия системного ПО, просто выключите консоль 
-	* Да, это безопасно и не приведёт к бану
-
-### Обновление EmuNAND до последней версии системного ПО 
-
-1. Включите консоль, удерживая кнопку повышения громкости, чтобы попасть в меню загрузчика SX OS
-1. Перейдите в "**Options**" -> "**SX Core** / **SX Lite**" -> "**Genuine boot**" -> "**Continue**", чтобы запустить SysNAND
-1. Дождитесь окончания загрузки официальной прошивки 
-1. Перейдите в "**Системные настройки**" -> "**Система**", нажмите на "**Обновление системы**"
-	* Дождитесь обновления прошивки, затем выключите консоль
-	* Если на вашей приставке и так уже последняя версия системного ПО, просто выключите консоль 
-	* Да, это безопасно и не приведёт к бану
-
-### Подготовительные работы
-
-1. Вставьте карту памяти приставки в ПК 
-1. Установите <span class="tooltip_container">
-	[kefir](https://github.com/rashevskyv/kefir/releases/tag/491){:target="_blank"}
-	<span class="tooltip"><i class="fas fa-caret-down"></i>
-		<span class="bottom">
-			Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
-		</span>
-	</span>
-</span>, выбрав "**Atmosphere for SX Core / Light**" в качестве опции (`modcip.zip`)
-1. Дождитесь окончания установки, затем верните карту памяти в консоль
-1. Включите консоль, удерживая кнопку повышения громкости, чтобы попасть в меню загрузчика SX OS
-1. Перейдите в "**Options**" -> "**NAND**" -> "**Dump NAND**" -> "**Advanced...**"
-1. Переведите переключатель "**Dump Raw full NAND**" в положение "**NO**" и нажмите "**Done**"
-	* Таким образом YES будет стоять только под пунктами "**Dump Boot0**" и "**Dump Boot1**"
-1. Нажмите "**Continue**", чтобы начать дампить Boot1 и Boot0 из вашей оригинальной прошивки
-1. Нажмите "**SX Core** / **SX Lite**", затем выберите **Cleanup** -> **Continue**
-
-### Перенос EmuNAND из SX OS в Atmosphere
-
-1. Нажмите "**Payloads**", выберите `payload.bin` и нажмите **Launch** -->
-
 <h2 id="проблемы-и-их-решения">Проблемы и их решения</h2>
 
 <details class="spoiler"><summary class="spoiler-title">Черный экран при запуске SysNAND</summary><div class="spoiler-body">
 <ol>
   <li>Выключите приставку, удерживая 30 секунд кнопку питания</li>
   <li>Вставьте карту памяти приставки в ПК</li>
-  <li>Скачайте <a href="https://t.me/SX_OS/178" target="_blank">SX_OS 3.1.0</a></li>
-  <li>Поместите <code class="language-plaintext highlighter-rouge">boot.dat</code> из архива <code class="language-plaintext highlighter-rouge">SX_OS_v3.1.0_BETA_by_[Team-Xecuter].zip</code> в корень карты памяти с заменой</li>
+  <li>Скачайте <a href="https://drive.google.com/file/d/1PZ7w1J5PAQf4CrUWfzfA1mVnCNeD13RP" target="_blank">SX_OS 3.1.0</a></li>
+  <li>Поместите скачанный <code class="language-plaintext highlighter-rouge">boot.dat</code> в корень карты памяти с заменой</li>
   <li>Включите консоль, удерживая кнопку повышения громкости, чтобы попасть в меню загрузчика SX OS</li>
   <li>Перейдите в “<strong>Options</strong>” -&gt; “<strong>SX Core</strong> / <strong>SX Lite</strong>”, затем выберите “<strong>Cleanup</strong>” -&gt; “<strong>Continue</strong>”</li>
   <li>Перейдите в “<strong>Payloads</strong>” -&gt; <code class="language-plaintext highlighter-rouge">payload.bin</code>”`, затем выберите “<strong>Launch</strong>”. Должен загрузиться SysNAND.</li>

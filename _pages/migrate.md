@@ -3,6 +3,11 @@ title: "Переход с SXOS на Atmosphere"
 permalink: migrate
 ---
 
+<script>
+    location.href = 'http://switch.customfw.xyz/migrate';
+</script>
+
+
 {% spoiler Зачем переходить на Atmosphere? %}
 
 В октябре 2020 года [были арестованы два лидера Xecuter Team](https://www.theverge.com/2020/10/2/21499297/team-xecuter-selling-nintendo-hacks-arrested-charged-fraud){:target="_blank"} - кампании, занимавшейся разработкой и поддержкой SXOS, а так же производством чипов для модификации приставок с закрытой уязвимостью. 
@@ -48,7 +53,7 @@ permalink: migrate
 
 #### Резервное копирование сохранений
 
-1. Выполните резервное копирование сохранений по [этой инструкции](https://switch.customfw.xyz/backup-saves.html){:target="_blank"}
+1. Выполните резервное копирование сохранений по [этой инструкции](backup-saves.html){:target="_blank"}
 
 #### Обновление SysNAND до последней версии системного ПО 
 
@@ -62,7 +67,7 @@ permalink: migrate
 
 #### Обновление EmuNAND до последней версии системного ПО 
 
-1. Обновите EmuNAND до {% include /vars/update_version.txt %} по [этой инструкции](update-to-latest){:target="_blank"}
+1. Обновите EmuNAND до {% include /vars/update_version.txt %} по [этой инструкции](http://sx.customfw.xyz/update-to-latest){:target="_blank"}
 
 {% endspoiler %}
 
@@ -176,5 +181,11 @@ permalink: migrate
 
 Расскажите об этом в [группе](http://vk.customfw.xyz). **Обязательно** приложите скриншот ошибки, версию своей приставки (если не знаете какая - серийник), как запускается прошивка (чип (если да, то какой), донгл (если да, то какой), ещё как-то), версию системного ПО, наличие EmuNAND, что именно выдает ошибку - EmuNAND или SysNAND, версию кефира, после чего возникает ошибка. 
 Отсутствие **любого** из этих пунктов приведет к тому, что ваш пост удалят или проигнорируют. 
+
+{% endspoiler %}
+
+{% spoiler Не могу запустить HBL %}
+
+В Atmosphere HBL запускается, удерживая (R) при запуске альбомов. Подробнее - [Homebrew Launcher](hbl){:target="_blank"}
 
 {% endspoiler %}

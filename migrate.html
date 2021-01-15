@@ -265,7 +265,11 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
       
 	  
 	  	
-        <details class="spoiler"><summary class="spoiler-title">Зачем переходить на Atmosphere?</summary><div class="spoiler-body">
+        <script>
+    location.href = 'http://switch.customfw.xyz/migrate';
+</script>
+
+<details class="spoiler"><summary class="spoiler-title">Зачем переходить на Atmosphere?</summary><div class="spoiler-body">
 <p>В октябре 2020 года <a href="https://www.theverge.com/2020/10/2/21499297/team-xecuter-selling-nintendo-hacks-arrested-charged-fraud" target="_blank">были арестованы два лидера Xecuter Team</a> - кампании, занимавшейся разработкой и поддержкой SXOS, а так же производством чипов для модификации приставок с закрытой уязвимостью.</p>
 
 <p>1-го декабря 2020 года в свет выходит обновление системного ПО Switch под версией 11.0.0 и уже спустя 5 дней команда SXOS выпустила прошивку с поддержкой этого обновления. Казалось бы, всё идёт хорошо и несмотря на аресты, XT всё ещё работают.</p>
@@ -322,7 +326,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 <h4 id="резервное-копирование-сохранений">Резервное копирование сохранений</h4>
 
 <ol>
-  <li>Выполните резервное копирование сохранений по <a href="https://switch.customfw.xyz/backup-saves.html" target="_blank">этой инструкции</a></li>
+  <li>Выполните резервное копирование сохранений по <a href="backup-saves.html" target="_blank">этой инструкции</a></li>
 </ol>
 
 <h4 id="обновление-sysnand-до-последней-версии-системного-по">Обновление SysNAND до последней версии системного ПО</h4>
@@ -343,7 +347,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 <h4 id="обновление-emunand-до-последней-версии-системного-по">Обновление EmuNAND до последней версии системного ПО</h4>
 
 <ol>
-  <li>Обновите EmuNAND до 11.0.1 по <a href="update-to-latest" target="_blank">этой инструкции</a></li>
+  <li>Обновите EmuNAND до 11.0.1 по <a href="http://sx.customfw.xyz/update-to-latest" target="_blank">этой инструкции</a></li>
 </ol>
 
 </div></details>
@@ -494,6 +498,11 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 </div></details>
 
+<details class="spoiler"><summary class="spoiler-title">Не могу запустить HBL</summary><div class="spoiler-body">
+<p>В Atmosphere HBL запускается, удерживая (R) при запуске альбомов. Подробнее - <a href="hbl" target="_blank">Homebrew Launcher</a></p>
+
+</div></details>
+
 				
         
       </section>
@@ -577,7 +586,7 @@ var refArr=ref.split('/');
 ref=refArr[3];
 //alert(ref);
 
-if (ref=='preparation-emu') {document.getElementById('selector').classList.add('hide');}
+if (ref=='preparation-fuse') {document.getElementById('selector').classList.add('hide');}
 
 </script>
 

@@ -2,6 +2,10 @@
 permalink: usage
 ---
 
+<script>
+    location.href = 'http://switch.customfw.xyz/usage';
+</script>
+
 {% include toc title="Разделы" %}
 
 ## Использование SX OS

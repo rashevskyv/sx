@@ -2,6 +2,10 @@
 permalink: games
 ---
 
+<script>
+    location.href = 'http://switch.customfw.xyz/games';
+</script>
+
 {% include toc title="Разделы" %}
 
 ## Установка игр

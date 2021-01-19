@@ -4,6 +4,10 @@ permalink: get-started
 
 {% include toc title="Разделы" %}
 
+<script>
+    location.href = 'http://switch.customfw.xyz/';
+</script>
+
 В данном руководстве мы не рассматриваем сам процесс установки чипа в приставку. Инструкции для самостоятельной установки имеются на [официальном сайте Team Xecuter](https://sx.xecuter.com/#manuals){:target="_blank"}, так же в интернете можно найти множество видео, показывающих весь процесс.
 {: .notice--info}
 

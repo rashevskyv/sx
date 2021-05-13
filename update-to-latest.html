@@ -295,14 +295,15 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 <ul>
   <li><a href="https://github.com/rashevskyv/kefir/releases/tag/491" target="_blank">Kefir 4</a></li>
-  <li>Прошивка 11.0.1 (скачайте по любой из ссылок):
+  <li>Прошивка 12.0.2 (скачайте по любой из ссылок):
     <ul>
-      <li><a href="magnet:?xt=urn:btih:32E00202048CE3A0A77F63F0DBB6C239C15471D2&amp;dn=11.0.1.zip&amp;tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce" target="_blank">magnet</a></li>
-      <li><a href="https://yadi.sk/d/Y2bbzSSb1MJxPA" target="_blank">ЯД</a></li>
-      <li><a href="https://drive.google.com/file/d/1oFx4OMiZud26vC_w9fVwXQ_068jR3K43" target="_blank">GD</a></li>
-      <li><a href="https://mega.nz/file/hSAz3Aab#MWQSedBrhcYkt5XsXRvg1AuWENUC2-7b1UREB3HxJcQ" target="_blank">MEGA</a></li>
+      <li><a href="magnet:?xt=urn:btih:AED6927F84C7B6CA2D1ABC3C5D999BBBC2D412A1&amp;dn=12.0.2.zip&amp;tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce" target="_blank">magnet</a></li>
+      <li><a href="https://disk.yandex.ua/d/_sQKmDWLS4z7XQ" target="_blank">ЯД</a></li>
+      <li><a href="https://drive.google.com/file/d/1tYFqYN9a2y5Q-t5m5Jf61BzcvrapdgFa" target="_blank">GD</a></li>
+      <li><a href="https://mega.nz/file/oWhlWKCT#zB6Ak80IuD0716RqOakPIZsfiylOd-JGsVdn4eHiTsA" target="_blank">MEGA</a></li>
     </ul>
   </li>
+  <li>Карта памяти</li>
 </ul>
 
 <h2 id="инструкция">Инструкция</h2>
@@ -322,22 +323,8 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
 <ol>
   <li>Выключите Switch и вставьте его карту памяти в ПК</li>
-  <li>Удалите следующие папки с карты памяти, если таковые имеются:
-    <ul>
-      <li><code class="language-plaintext highlighter-rouge">sxos/titles/0100000000001000</code></li>
-      <li><code class="language-plaintext highlighter-rouge">sxos/titles/0100000000001013</code></li>
-      <li><code class="language-plaintext highlighter-rouge">sxos/titles/0100000000000352</code></li>
-    </ul>
-  </li>
-  <li>Установите <code class="language-plaintext highlighter-rouge">.7z</code>-архив <span class="tooltip_container">
- <a href="https://github.com/rashevskyv/kefir/releases/tag/491" target="_blank">kefir</a>
- <span class="tooltip"><i class="fas fa-caret-down"></i>
-     <span class="bottom">
-         Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
-     </span>
- </span>
-</span>, если ещё не делали этого</li>
-  <li>Скопируйте <strong>содержимое</strong> архива <code class="language-plaintext highlighter-rouge">11.0.1.zip</code> с прошивкой в корень карты памяти
+  <li>Установите <code class="language-plaintext highlighter-rouge">.zip</code>-архив <a href="https://github.com/rashevskyv/kefir/releases/tag/491" target="_blank">Kefir 4</a>, если ещё не делали этого</li>
+  <li>Распакуйте архив <code class="language-plaintext highlighter-rouge">12.0.2.zip</code> в любую удобную папку на карте памяти вашей приставки (например, папку <code class="language-plaintext highlighter-rouge">update</code>)
     <ul>
       <li>Ещё раз - <strong>содержимое</strong> архива <strong>с прошивкой</strong>. Не архив с кефиром, <strong>с прошивкой</strong>! Архив с прошивкой расположен в части <a href="#что-понадобится">Что понадобится</a>. Нужно скопировать не сам архив, а именно его <strong>содержимое</strong></li>
       <li>Вместо этого вы можете скачать архив со свежей версией системного ПО через приложение <strong>FreshHay</strong> прямо на вашей приставке. Для этого запустите <a href="hbl" target="_blank">HBL</a> через игру, выберите приложение <strong>FreshHay</strong> и нажмите (A), чтобы начать закачку прошивки. Программа сама скачает последнюю версию системного ПО в папку <code class="language-plaintext highlighter-rouge">switch/FreshHay</code>. После, распакуйте скачанный архив с помощью <strong>NXShell</strong>. Архив будет находиться по пути <code class="language-plaintext highlighter-rouge">switch/Freshhay</code></li>
@@ -357,14 +344,14 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
   </li>
   <li>Запустите <strong>ChoiDujourNX</strong></li>
   <li>
-    <p>Перейдите в папку, в которой находится прошивка 11.0.1, скопированная ранее, и нажмите “<strong>Choose</strong>”</p>
+    <p>Перейдите в папку, в которой находится прошивка 12.0.2, скопированная ранее, и нажмите “<strong>Choose</strong>”</p>
 
     <p class="text-center"><img src="/images/screenshots/choi/fw.png" alt="" /></p>
 
     <p class="text-center"><img src="/images/screenshots/choi/choose.png" alt="" /></p>
   </li>
   <li>
-    <p>Выберите “<strong>11.0.1 (exFAT)</strong>”</p>
+    <p>Выберите “<strong>12.0.2 (exFAT)</strong>”</p>
 
     <p class="text-center"><img src="/images/screenshots/choi/exfat.png" alt="" /></p>
   </li>
@@ -378,8 +365,11 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
     <p class="text-center"><img src="/images/screenshots/choi/start.png" alt="" /></p>
   </li>
-  <li>После окончания установки нажмите “<strong>Reboot</strong>”, “<strong>Shutdown</strong>”, чтобы перезагрузить приставку.</li>
-  <li>Продолжайте выполнять инструкцию по миграции</li>
+  <li>После окончания установки нажмите “<strong>Reboot</strong>”, “<strong>Shutdown</strong>”, чтобы выключить приставку.
+    <ul>
+      <li>Имейте ввиду, что эмунанд перестанет загружаться после обновления! Продолжайте выполнять инструкцию по миграции, чтобы это исправить</li>
+    </ul>
+  </li>
 </ol>
 
 <hr />

@@ -15,10 +15,11 @@ author_profile: true
 
 * [Kefir 4](https://github.com/rashevskyv/kefir/releases/tag/491){:target="_blank"}
 * Прошивка {% include /vars/update_version.txt %} (скачайте по любой из ссылок):
-	* [magnet](magnet:?xt=urn:btih:32E00202048CE3A0A77F63F0DBB6C239C15471D2&dn=11.0.1.zip&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce){:target="_blank"}
-	* [ЯД](https://yadi.sk/d/Y2bbzSSb1MJxPA){:target="_blank"}
-	* [GD](https://drive.google.com/file/d/1oFx4OMiZud26vC_w9fVwXQ_068jR3K43){:target="_blank"}
-	* [MEGA](https://mega.nz/file/hSAz3Aab#MWQSedBrhcYkt5XsXRvg1AuWENUC2-7b1UREB3HxJcQ){:target="_blank"}
+	* [magnet](magnet:?xt=urn:btih:AED6927F84C7B6CA2D1ABC3C5D999BBBC2D412A1&dn=12.0.2.zip&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce){:target="_blank"}
+	* [ЯД](https://disk.yandex.ua/d/_sQKmDWLS4z7XQ){:target="_blank"}
+	* [GD](https://drive.google.com/file/d/1tYFqYN9a2y5Q-t5m5Jf61BzcvrapdgFa){:target="_blank"}
+	* [MEGA](https://mega.nz/file/oWhlWKCT#zB6Ak80IuD0716RqOakPIZsfiylOd-JGsVdn4eHiTsA){:target="_blank"}
+* Карта памяти 
 
 ## Инструкция
 
@@ -31,12 +32,8 @@ author_profile: true
 ### Часть II - Подготовка к обновлению
 
 1. Выключите Switch и вставьте его карту памяти в ПК
-1. Удалите следующие папки с карты памяти, если таковые имеются:
-	* `sxos/titles/0100000000001000`
-	* `sxos/titles/0100000000001013`
-	* `sxos/titles/0100000000000352`
-1. Установите `.7z`-архив {% include abbr/kefir_addr.txt %}, если ещё не делали этого
-1. Скопируйте **содержимое** архива `{% include /vars/update_version.txt %}.zip` с прошивкой в корень карты памяти
+1. Установите `.zip`-архив [Kefir 4](https://github.com/rashevskyv/kefir/releases/tag/491){:target="_blank"}, если ещё не делали этого
+1. Распакуйте архив `{% include /vars/update_version.txt %}.zip` в любую удобную папку на карте памяти вашей приставки (например, папку `update`)
 	* Ещё раз - **содержимое** архива **с прошивкой**. Не архив с кефиром, **с прошивкой**! Архив с прошивкой расположен в части [Что понадобится](#что-понадобится). Нужно скопировать не сам архив, а именно его **содержимое**
 	* Вместо этого вы можете скачать архив со свежей версией системного ПО через приложение **FreshHay** прямо на вашей приставке. Для этого запустите [HBL](hbl){:target="_blank"} через игру, выберите приложение **FreshHay** и нажмите (A), чтобы начать закачку прошивки. Программа сама скачает последнюю версию системного ПО в папку `switch/FreshHay`. После, распакуйте скачанный архив с помощью **NXShell**. Архив будет находиться по пути `switch/Freshhay`
 1. Вставьте карту памяти обратно в приставку
@@ -74,8 +71,8 @@ author_profile: true
 	![]({{ base_path }}/images/screenshots/choi/start.png)
 	{: .text-center}
 
-1. После окончания установки нажмите "**Reboot**", "**Shutdown**", чтобы перезагрузить приставку. 
-1. Продолжайте выполнять инструкцию по миграции
+1. После окончания установки нажмите "**Reboot**", "**Shutdown**", чтобы выключить приставку. 
+	* Имейте ввиду, что эмунанд перестанет загружаться после обновления! Продолжайте выполнять инструкцию по миграции, чтобы это исправить
 
 ___
 

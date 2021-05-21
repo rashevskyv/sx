@@ -11,6 +11,9 @@ author_profile: true
 Никогда не обновляйте SysNAND этим методом! Он предназначен **только** для использования EmuNAND! SysNAND обновляется **только** стандартным способом, через настройки! Обновивши SysNAND через ChoiDujourNX на Mariko, вы гарантированно получите брик при попытке зайти в SysNAND! 
 {: .notice--danger}
 
+SXOS, а значит и KEFIR4, будут работать только на приставке с прошивкой 11.0.0 или ниже!
+{: .notice--warning} 
+
 ## Что понадобится
 
 * [Kefir 4](https://github.com/rashevskyv/kefir/releases/tag/491){:target="_blank"}

@@ -16,7 +16,7 @@ permalink: games
 
 ## Где брать игры и обновления
 
-* [Исчерпывающее количество источников](https://4pda.ru/forum/index.php?showtopic=939714){: target="blank_"}
+* [Исчерпывающее количество источников](https://4pda.to/forum/index.php?showtopic=939714){: target="blank_"}
 
 ## Установка и запуск игр в формате XCI
 
@@ -178,7 +178,7 @@ permalink: games
 ## Полезные ссылки 
 
 * [Старая инструкция по установке через USB](games-nsul){:target="_blank"}
-* [Cписок игр на русском](https://4pda.ru/forum/index.php?showtopic=937297){:target="_blank"}
+* [Cписок игр на русском](https://4pda.to/forum/index.php?showtopic=937297){:target="_blank"}
 * [Эмуляция Amiibo с помощью модуля emuiibo](emuiibo){:target="_blank"}
 * [Связывание учётной записи консоли с аккаунтом Nintendo](link-account){:target="_blank"}
 

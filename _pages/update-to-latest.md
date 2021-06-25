@@ -17,11 +17,7 @@ SXOS, а значит и KEFIR4, будут работать только на �
 ## Что понадобится
 
 * [Kefir 4](https://github.com/rashevskyv/kefir/releases/tag/491){:target="_blank"}
-* Прошивка {% include /vars/update_version.txt %} (скачайте по любой из ссылок):
-	* [magnet](magnet:?xt=urn:btih:AED6927F84C7B6CA2D1ABC3C5D999BBBC2D412A1&dn=12.0.2.zip&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80%2fannounce){:target="_blank"}
-	* [ЯД](https://disk.yandex.ua/d/_sQKmDWLS4z7XQ){:target="_blank"}
-	* [GD](https://drive.google.com/file/d/1tYFqYN9a2y5Q-t5m5Jf61BzcvrapdgFa){:target="_blank"}
-	* [MEGA](https://mega.nz/file/oWhlWKCT#zB6Ak80IuD0716RqOakPIZsfiylOd-JGsVdn4eHiTsA){:target="_blank"}
+* [Прошивка **{% include /vars/update_version.txt %}**](https://darthsternie.net/switch-firmwares/){:target="_blank"}
 * Карта памяти 
 
 ## Инструкция
